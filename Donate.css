@@ -1,0 +1,216 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+   background-image: url(background/donate_banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*  start main css style */
+#pradesh-div{
+    display: inline;
+    justify-content: center;
+    /* float: right; */
+    flex-wrap: wrap;
+    align-items: center; 
+     /* align-content: space-evenly; */
+
+}
+
+.box1,.box2{
+        height: 250px;
+        width: 800px;
+         margin-bottom: 50px; 
+         /* background-color: red;  */
+        /* border: 1px solid black; */
+}
+.box1 h1{
+    font-size: 2.5em;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.box1 p{
+    font-size: 1.2em;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.box1 button{
+    height: 40px;
+    width: 122px;
+    font-size: 18px;
+    margin-left: 5px;
+    border-radius: 10px;
+    /* background-color: orange; */
+    cursor: pointer;
+    margin-top: 5px;
+    
+}
+
+span{
+    color: purple;
+}
+
+.box2 input{
+    height: 40px;
+    width: 350px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-top: 25px;
+}
+
+.check-box input{
+    width: 15px;
+    margin-top: -10px;
+}
+
+ .donate{
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 0.5em;
+    background-color: orange;
+    cursor: pointer;
+    margin-left: 8em;
+} 
+
+/*  End main css style */
+
+/*  start footer css style */
+
+#name-div{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100px;
+        margin-top: 20px;
+        background-color: rgb(222, 224, 225);
+}
+
+.donation2 a{
+    padding: 10px;
+}
+
+.donation2 img:hover{
+    background-color: red;
+    border-radius: 50%;
+}
+
+ /*  End footer css style */
+
+  /*  start responsive */
+
+  @media screen and (max-width:900px) and (min-width:1700px){
+       
+        #pradesh-div{
+            height: auto;
+
+        }
+        .box1, .box2{
+            width: 100%;
+            text-align: center;
+            height: auto;
+            padding: 20px;
+        }
+
+        #name-div{
+            height: auto;
+        }
+
+        .donation1{
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            height: auto;
+        }
+
+        .donation2{
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            height: auto;
+        }
+  }
+
+  @media screen and (max-width:768px){
+       
+       #pradesh-div{
+           height: auto;
+
+       }
+       .box1, .box2{
+           width: 90%;
+           text-align: center;
+           padding: 20px;
+           height: auto;
+       }
+
+       #name-div{
+            height: auto;
+        }
+
+       .donation1{
+            width: 80%;
+            text-align: center;
+            padding: 20px;
+            height: auto;
+        }
+
+        .donation2{
+            width: 80%;
+            text-align: center;
+            padding: 20px;
+            height: auto;
+        }
+ }
+
+ @media screen and (max-width:480px){
+       
+       #pradesh-div{
+           height: auto;
+
+       }
+       .box1, .box2{
+           width: 80%;
+           text-align: center;
+           padding: 20px;
+           height: auto;
+       }
+
+       .box2 input{
+            width: 100%;
+       }
+
+       .donation1{
+            width: 60%;
+            text-align: center;
+            padding: 20px;
+            height: auto;
+        }
+
+        .donation2{
+            width: 60%;
+            display: flex;
+            flex-wrap: wrap;
+            /* margin-right: 5em; */
+            text-align: center;
+            padding: 20px;
+            height: auto;
+        }
+
+        /* .donate{
+                height: auto;
+                width: 100%;
+                margin-right: 20em;
+        } */
+ }
+

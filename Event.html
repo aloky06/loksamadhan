@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event || Lok Samadhan Party</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="favicon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* start main css style */
+        #about-div1{
+                /* background-color: lightblue; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+
+        }
+
+        .about-div1{
+                width: 100%;
+                height: 400px;
+                /* border: 1px solid black; */
+                /* height: 200px; */
+        }
+
+        .about-div1 img{
+                height: 400px;
+                width: 100%;
+                opacity: 0.5;
+        }
+
+        .about-div1 h2{
+            color: black;
+            text-align: center;
+            font-size: 3.5em;
+            margin-top: -4em;
+        }
+
+        #div-container1{
+                /* border: 1px solid black; */
+                background-color: rgb(234, 220, 220);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                justify-content: space-evenly;
+        }
+
+        #div-container2{
+                /* border: 1px solid black; */
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-evenly;
+                background-color: rgb(212, 219, 194);
+        }
+
+        #div-container3{
+                /* border: 1px solid black; */
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-evenly;
+                background-color: rgb(230, 247, 162);
+        }
+
+        .content-div22 h1{
+                color: orange;
+                font-size: 2.5em;
+
+        }
+
+
+        .content-div22 h4{
+                color: red;
+        }
+
+        .content-div22 p{
+                color: black;
+        }
+
+        .content-div22 button{
+                width: 28%;
+                color: rgb(41, 39, 39);
+                font-size: 16px;
+                border: none;
+                border-radius: 10px;
+                transition: 0.9s all ease;
+        }
+
+        .content-div22 button:hover{
+                color: red;
+                border-bottom: 1px solid red ;
+                letter-spacing: 3px;
+                box-shadow: 0px 3px 0px ;
+
+        }
+
+        #map{
+            display: flex;
+            background-color: aliceblue;
+            border-radius: 20px;
+            /* width: 80%; */
+            /* margin-left: 10em; */
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            /* justify-content: space-evenly; */
+        }
+
+        .adress-div{
+                /* border: 1px solid black; */
+                height: 330px;
+                width: 400px;
+        }
+
+        .adress-div p{
+                font-size: 25px;
+                font-weight: bold;
+                padding: 1em;
+        }
+        .adress-div button{
+                background-color: aqua;
+                width: 40%;
+                margin-left: 1.5em;
+                border: none;
+                font-weight: bold;
+                border-radius: 10px;
+        }
+
+        .adress-div button:hover{
+                background-color: aquamarine;
+                box-shadow: 0px 0px 5px;
+        }
+
+        .map-div iframe{
+                border-radius: 10px;
+        }
+        
+            /* make responsive style */
+
+        /* responsive for large device */
+        @media screen and (max-width: 900px) and (min-width:1700px){
+            #map, #service-div2, #service-div3, #div-container{
+                    height: auto;
+                    padding: 10px;
+            }
+
+            .img-div img{
+                    width: 100%;
+                    text-align: center;
+            }
+
+            .content-div22 h1{
+                    width: 100%;
+                    font-size: 2.5em;
+                    
+            }
+
+            .app-download{
+                    width: 50%;
+            }
+
+            .phone-img, .adress-div, .map-div{
+                    width: 30%;
+                    
+            }
+
+            .container-div{
+                    width: 25%;
+                    /* gap: 20%; */
+            }
+
+            .map-div iframe{
+                    width: 160%;
+            }
+        }
+
+        /* responsive for laptop */
+
+        @media screen and (max-width:900px){
+            #service-div2, #service-div3, #map, #div-container{
+                    height: auto;
+                    padding: 10px;
+            }
+
+            .img-div img{
+                    width: 100%;
+                    text-align: center;
+            }
+
+            .content-div22 h1{
+                    width: 100%;
+                    font-size: 2.5em;
+                    
+            }
+
+            .app-download{
+                    width: 50%;
+            }
+
+            .phone-img, .container-div, .adress-div, .map-div{
+                    width: 30%;
+                    
+            }
+
+            .map-div iframe{
+                    width: 150%;
+            }
+        }
+
+        /* responsive for tablet */
+
+        @media screen and (max-width:768px){
+
+            #map, #phone-container, #div-container{
+                    height: auto;
+                    
+            }
+
+            .img-div img{
+                    width: 95%;
+                    text-align: center;
+            }
+
+            .content-div22 h1{
+                    width: 95%;
+                    font-size: 2.5em;
+                    
+            }
+
+            .adress-div{
+                    width: 100%;
+                    text-align: center;
+            }
+
+            .adress-div button{
+                    margin-right: 5em;
+            }
+
+            .map-div{
+                    width: 40%;
+            }
+
+            .map-div{
+                    width: 85%;
+            }
+
+            .map-div iframe{
+                    width: 100%;
+            }
+        }
+
+        /* responsive for mobile phone */
+
+        @media screen and (max-width:480px){
+            .banner-div h1{
+                    font-size: 20px;
+            }
+
+             #map, #phone-container, #div-container1{
+                    height: auto;
+                    
+            }
+
+            .about-div1 h2{
+                        font-size: 2.5em;
+                        margin-top: -6em;
+            }
+
+            .img-div img{
+                    width: 100%;
+                    text-align: center;
+            }
+
+            .content-div22 h1{
+                    width: 100%;
+                    font-size: 1.9em;
+                    
+            }
+
+            .content-div h1, p, button{
+                    padding-left: 5px;
+            }
+
+            .adress-, .map-div{
+                    width: 100%;
+            }
+
+            .adress-div p{
+                    text-align: center;
+                    line-height: 30px;
+            }
+
+            .adress-div button{
+                    margin-left: 6em;
+            }
+
+            .map-div iframe{
+                    width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="nav-div">
+                <div class="logo">
+                    <a href="Home.html"><img src="logo/LOK SAMADHAN PARTY LOGO.png" alt="logo"></a>
+                </div>
+                    <h1>LOK <span>SAMADHAN</span> PARTY </h1>
+                <ul class="navbar">
+                    <li>
+                        <a href="Index.html">Home</a>
+                        <a href="About.html">About</a>
+                        <a href="Gallery.html">Gallery</a>
+                        <a href="Service.html">Service</a>
+                        <a href="Event.html">Event</a>
+                        <a href="Leadership.html">Leadership</a>
+                        <a href="Contact.html">Contact</a>
+                        <a class="donate" href="Donate.html"><button>Donate Now</button></a>
+                        <a class="account" href="Account.html"> <img src="icon/account.png" alt="account icon" width="50px"></a>
+                    </li>
+                </ul>
+                <span class="menu-toggle">&#9776;</span>
+                
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="about-div1">
+            <div class="about-div1">
+                <img src="background/key-people-banner.jpg" alt="background">
+                <h2>Event: Lok <span class="span">Samadhan </span> Party</h2>
+            </div>
+        </div>
+
+        <div id="div-container1">
+            <div class="img-div">
+                <img src="img/mission.jpg" alt="image-1">
+            </div>
+
+            <div class="content-div22">
+                <h1>Balancing the Budgets of <br>
+                    Power Humanity</h1>
+                    <h4>&#128198; March, 2025</h4><br>
+                    <hr><br>
+                    <p>Dramatically innovate adaptive ideas to whereas turnkey metrics. Appropria <br> revolutionize cutting-edge total linkage whereas business recaptiualize in core <br> competencies after premier ROI</p><br>
+                    <a href="Event.html"><button>View Event  &#x2197;</button></a>
+            </div>
+        </div><br>
+
+        <div id="div-container2">
+            <div class="content-div22">
+                <h1>Balancing the Budgets of <br>
+                    Power Humanity</h1>
+                    <h4>&#128198; March, 2025</h4><br>
+                    <hr><br>
+                    <p>Dramatically innovate adaptive ideas to whereas turnkey metrics. Appropria <br> revolutionize cutting-edge total linkage whereas business recaptiualize in core <br> competencies after premier ROI</p><br>
+                    <a href="Event.html"><button>View Event  &#x2197;</button></a>
+            </div>
+
+            <div class="img-div">
+                <img src="img/mission2.png" alt="image-2">
+            </div>
+        </div><br>
+
+        <div id="div-container3">
+            <div class="img-div">
+                <img src="img/mission3.png" alt="image-2">
+            </div>
+
+            <div class="content-div22">
+                <h1>Balancing the Budgets of <br>
+                    Power Humanity</h1>
+                    <h4>&#128198; March, 2025</h4><br>
+                    <hr><br>
+                    <p>Dramatically innovate adaptive ideas to whereas turnkey metrics. Appropria <br> revolutionize cutting-edge total linkage whereas business recaptiualize in core <br> competencies after premier ROI</p><br>
+                    <a href="Event.html"><button>View Event  &#x2197;</button></a>
+            </div>
+        </div>
+        <div id="map">
+            <div class="adress-div">
+                <p>
+                    केंद्रीय कार्यालय पता : <br></br>
+                    मकान नं - गांधीनगर कॉलोनी, <br>
+                    पोस्ट - सुन्दरपुर , <br>
+                    लखनऊ - 221005 </p>
+                    <a href="https://www.google.com/maps"><button>गूगल मैप पर देखे &rarr; </button></a>
+            </div>
+
+            <div class="map-div">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115408.09799831448!2d82.90870709861062!3d25.32089491994236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1742292313815!5m2!1sen!2sin" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+       </div>
+    </main>
+    
+    <footer>
+        <div id="footer">
+                <div class="div-container1">
+                        <h2>Candidate Info</h2>
+                        <p>K.P. Maurya </p>
+                        <a href="#">Vill- Gopalpur Baragaon Varanasi</a> <br>
+                        <a href="#">+910 698 784 235 <br> +91 695 847 5547</a> <br>
+                        <a href="#">exam@gmail.com</a>
+                    </div>
+        
+                    <div class="div-container2">
+                        <h2>Quick Link</h2>
+                        <a href="Youth.html">Youth Focus</a><br>
+                        <a href="History.html">Our History</a> <br>
+                        <a href="Our_leadership.html">Our Leadership</a><br>
+                        <a href="Constitution.html">Condtitution</a><br>
+                        <a href="Election.html">Election Symbol</a><br>
+                    </div>
+        
+                    <div class="div-container3">
+                        <h2>Media Resources</h2>
+                        <a href="Press.html">Press Release</a><br>
+                        <a href="Gallery.html">Photo Gallery</a><br>
+                        <a href="Video.html">Video Gallery</a><br>
+                        <a href="Privacy.html" target="_blank">Privacy Policy </a><br>
+                        <a href="Terms.html" target="_blank">Tearm & Condition</a>
+                    </div>
+
+            <div class="div-container4">
+                <form action="php">
+                    <h2>Newsletter</h2>
+                    <input type="text" placeholder="Your Name*"  required><br></br>
+                    <input type="text" placeholder="Your Email*"  required><br></br>
+                    <textarea name="feedback" id="10" placeholder="Send Massage" rows="10"  required></textarea><br>
+                    <button>Send Massage</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="copyright-div">
+            <div class="box1">
+                <p>Design & Developed By: Hindsol Software Pvt. Ltd.</p>
+            </div>
+
+            <div class="box2">
+                <p>&copy;Copyright Lok Samadhan Party 2025. All Rights Reserved.</p>
+            </div>
+
+            <div class="box3">
+                <a href="Home.html">Home</a> ||
+                <a href="About.html">About</a> ||
+                <a href="Register.html" target="_blank">Register Now</a>
+            </div>
+        </div>
+
+        <div id="icons">
+            <div class="icon">
+                <a href="https://www.facebook.com/"><img src="icon/facebook-removebg-preview.png" alt="facebook icon" width="30px"></a>
+                <a href="https://www.instagram.com/"><img src="icon/Instagram-removebg-preview.png" alt="instagram icon" width="30px"></a>
+                <a href="https://www.linkedin.com"><img src="icon/linkdin-removebg-preview.png" alt="linkedin icon" width="30px"></a>
+                <a href="https://x.com/?lang=en"><img src="icon/twitter-removebg-preview.png" alt="twitter icon" width="30px"></a>
+                <a href="https://www.youtube.com/"><img src="icon/youtubr-removebg-preview.png" alt="youtube icon" width="30px"></a>
+                <a href="https://web.telegram.org/k/"><img src="icon/telegram-removebg-preview-removebg-preview.png" alt="telegram icon" width="30px"></a>
+                
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.querySelector(".menu-toggle");
+    const navbar = document.querySelector(".navbar");
+
+    toggleButton.addEventListener("click", function () {
+        navbar.classList.toggle("active");
+    });
+});
+
+    </script>
+    
+</body>
+</html>

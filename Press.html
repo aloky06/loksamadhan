@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press Release || Lok Samadhan Party</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="favicon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* start main css style */
+        #press-container{
+                /* border: 1px solid black; */
+                background-color: cadetblue;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+        }
+
+        .press-release{
+                font-size: 1.2em;
+                background-color: orange;
+                color: purple;
+                width: 30%;
+                border-radius: 5px;
+                text-align: center;
+        }
+
+        #press-container1{
+                /* border: 1px solid black; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+        }
+
+        .press1 {
+                width: 21.6%;
+                cursor: pointer;
+                color: rgb(26, 69, 26);
+              
+        }
+
+        .press1 img{
+                /* text-align: center; */
+                height: auto;
+                transition: all 0.5s ease;
+                border-radius: 5px;
+                /* cursor: pointer; */
+        }
+
+        .press1 img:hover{
+                transform: scale(1.04);
+        }
+
+        #map{
+            display: flex;
+            background-color: aliceblue;
+            border-radius: 20px;
+            /* width: 80%; */
+            /* margin-left: 10em; */
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            /* justify-content: space-evenly; */
+        }
+
+        .adress-div{
+                /* border: 1px solid black; */
+                height: 330px;
+                width: 400px;
+        }
+
+        .adress-div p{
+                font-size: 25px;
+                font-weight: bold;
+                padding: 1em;
+        }
+        .adress-div button{
+                background-color: aqua;
+                width: 40%;
+                margin-left: 1.5em;
+                border: none;
+                font-weight: bold;
+                border-radius: 10px;
+        }
+
+        .adress-div button:hover{
+                background-color: aquamarine;
+                box-shadow: 0px 0px 5px;
+        }
+
+        .map-div iframe{
+                border-radius: 10px;
+        }
+        
+        /* end main css style */
+
+        /* responsive */
+        /* responsive for laptop */
+        @media screen and (max-width:1700px){
+            #press-container, #press-container1, #map{
+                    height: auto;
+            }
+            
+           .press-release h1{
+                    /* color: red; */
+                    font-size: 30px;
+           }
+
+           .press1{
+                width: 25%;
+           }
+
+           .press1 img{
+                width: 80%;
+                /* height: auto; */
+           }
+
+           .press1 h1{
+                
+                width: 50%;
+           }
+
+            .container-div{
+                    width: 30%;
+            }
+
+            .adress-div{
+                    width: 30%;
+            }
+
+            .map-div{
+                    width: 30%;
+            }
+
+            .map-div iframe{
+                    width: 150%;
+            }
+        }
+
+        /* responsive for tablets */
+        @media screen and (max-width:768px){
+            #press-container, #press-container1, #map{
+                    height: auto;
+            }
+            
+           .press-release h1{
+                    /* color: red; */
+                    font-size: 30px;
+           }
+
+           .press1{
+                width: 30%;
+           }
+
+           .press1 img{
+                width: 80%;
+                /* height: auto; */
+           }
+
+           .press1 h1{
+                
+                width: 50%;
+           }
+
+            .adress-div{
+                    width: 80%;
+                    text-align: center;
+            }
+
+            .adress-div p{
+                line-height: 35px;
+            }
+
+            .adress-div button{
+                    margin-right: 5em;
+            }
+
+            .map-div{
+                    width: 40%;
+            }
+
+            .map-div{
+                    width: 85%;
+            }
+
+            .map-div iframe{
+                    width: 100%;
+            }
+        }
+
+          /* responsive for mobile */
+          @media screen and (max-width:480px){
+            #press-container, #press-container1, #map{
+                    height: auto;
+            }
+            
+           .press-release h1{
+                    /* color: red; */
+                    font-size: 30px;
+           }
+
+           .press1{
+                width: 100%;
+                text-align: center;
+           }
+
+           .press1 img{
+                width: 80%;
+                /* height: auto; */
+           }
+
+           .press1 h1{
+                
+                width: 50%;
+           }
+
+            .adress-div{
+                    width: 80%;
+            }
+
+            .map-div{
+                    width: 80%;
+            }
+
+
+            .adress-div p{
+                    text-align: center;
+            }
+
+            .adress-div button{
+                    margin-left: 6em;
+            }
+
+            .map-div iframe{
+                    width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="nav-div">
+                <div class="logo">
+                    <a href="Home.html"><img src="logo/LOK SAMADHAN PARTY LOGO.png" alt="logo"></a>
+                </div>
+                    <h1>LOK <span>SAMADHAN</span> PARTY </h1>
+                <ul class="navbar">
+                    <li>
+                        <a href="Index.html">Home</a>
+                        <a href="About.html">About</a>
+                        <a href="Gallery.html">Gallery</a>
+                        <a href="Service.html">Service</a>
+                        <a href="Event.html">Event</a>
+                        <a href="Leadership.html">Leadership</a>
+                        <a href="Contact.html">Contact</a>
+                        <a class="donate" href="Donate.html"><button>Donate Now</button></a>
+                        <a class="account" href="Account.html"> <img src="icon/account.png" alt="account icon" width="50px"></a>
+                    </li>
+                </ul>
+                <span class="menu-toggle">&#9776;</span>
+                
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="press-container">
+            <div class="press-release">
+                <h1>Press Release</h1>
+            </div>
+        </div><br>
+
+        <div id="press-container1">
+            <div class="press1">
+                <img src="https://nppindia.in/wp-content/uploads/2023/02/img-5-1-960x683.jpg" alt="image" width="330px">
+                <h2>Message for Mamata: ‘We know how to take care of ourselves’; predicts TMC will get only 2-3 seats</h2>
+                <p>Jowai | Feb 3, 2023 Meghtional People’s Party (NPP) chief Conrad K Sangma on Friday heavily criticized TMC leader and leader of […]</p>
+            </div>
+
+            <div class="press1">
+                <img src="https://nppindia.in/wp-content/uploads/2023/02/NPP-launches-their-Manifesto-960x750.jpg" alt="image" width="330px">
+              <h2>NPP launches their Manifesto: People’s Document – Vision 2023-2028</h2>
+              <p>Jowai | Feb 3, 2023 Amidst a large gathering in Jowai, the National People’s Party (NPP) National President Conrad K Sangma on Friday released the party’s […]</p>
+            </div>
+
+            <div class="press1">
+                <img src="https://nppindia.in/wp-content/uploads/2020/07/news-960x750.jpg" alt="image" width="330px">
+                <h2>NPP adopts resolution to fight ‘discrimination’ of NE citizens</h2>
+                <p>The National People’s Party (NPP) today adopted a resolution to fight discrimination of Northeast citizens in its digital conclave that was attended by party functionaries from […]</p>
+            </div>
+        </div><br>
+
+
+        <div id="press-container1">
+            <div class="press1">
+                <img src="https://nppindia.in/wp-content/uploads/2020/03/14c15c0e-ff48-429b-b5b6-25fc32e2a7d6-960x750.jpg" alt="image" width="350px">
+                <h2>First NPP co-ordination meet in Shillong</h2>
+                <p>  NPP becomes regional political force to reckon with The National People’s Party on June 9, 2019 held its first Northeast Coordination (NECC) Committee meeting at […]</p>
+            </div>
+
+            <div class="press1">
+                <img src="https://nppindia.in/wp-content/uploads/2020/03/14c15c0e-ff48-429b-b5b6-25fc32e2a7d6-960x750.jpg" alt="image" width="330px">
+              <h2>First political party from NE to get national party status</h2>
+              <p> ﻿The National People’s Party (NPP) on June 7, 2019 was granted recognition as a national party by the Election Commission of India. “The party has fulfilled […]</p>
+            </div>
+
+            <div class="press1">
+                <img src="https://nppindia.in/wp-content/uploads/2020/03/img-9-4.jpg" alt="image" width="330px">
+                <h2>P.A. Sangma’s statue unveiled by Meghalaya CM</h2>
+                <p>Foundation laid for Rs. 125 cr P.A. Sangma Sports Complex in Tura Meghalaya Chief Minister and NPP President Conrad K. Sangma on March 4, 2020 unveiled […]</p>
+            </div>
+        </div><br>
+        <div id="map">
+            <div class="adress-div">
+                <p>
+                    केंद्रीय कार्यालय पता : <br></br>
+                    मकान नं - गांधीनगर कॉलोनी, <br>
+                    पोस्ट - सुन्दरपुर , <br>
+                    लखनऊ - 221005 </p>
+                    <a href="https://www.google.com/maps"><button>गूगल मैप पर देखे &rarr; </button></a>
+            </div>
+
+            <div class="map-div">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115408.09799831448!2d82.90870709861062!3d25.32089491994236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1742292313815!5m2!1sen!2sin" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+       </div>
+    </main>
+    
+    <footer>
+        <div id="footer">
+            <div class="div-container1">
+                <h2>Candidate Info</h2>
+                <p>K.P. Maurya </p>
+                <a href="#">Vill- Gopalpur Baragaon Varanasi</a> <br>
+                <a href="#">+910 698 784 235 <br> +91 695 847 5547</a> <br>
+                <a href="#">exam@gmail.com</a>
+            </div>
+
+            <div class="div-container2">
+                <h2>Quick Link</h2>
+                <a href="Youth.html">Youth Focus</a><br>
+                <a href="History.html">Our History</a> <br>
+                <a href="Our_leadership.html">Our Leadership</a><br>
+                <a href="Constitution.html">Condtitution</a><br>
+                <a href="Election.html">Election Symbol</a><br>
+            </div>
+
+            <div class="div-container3">
+                <h2>Media Resources</h2>
+                <a href="Press.html">Press Release</a><br>
+                <a href="Gallery.html">Photo Gallery</a><br>
+                <a href="Video.html">Video Gallery</a><br>
+                <a href="Privacy.html" target="_blank">Privacy Policy </a><br>
+                <a href="Terms.html" target="_blank">Tearm & Condition</a>
+            </div>
+
+            <div class="div-container4">
+                <form action="php">
+                    <h2>Newsletter</h2>
+                    <input type="text" placeholder="Your Name*"  required><br></br>
+                    <input type="text" placeholder="Your Email*"  required><br></br>
+                    <textarea name="feedback" id="10" placeholder="Send Massage" rows="10"></textarea><br>
+                    <button>Send Massage</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="copyright-div">
+            <div class="box1">
+                <p>Design & Developed By: Hindsol Software Pvt. Ltd.</p>
+            </div>
+
+            <div class="box2">
+                <p>&copy;Copyright Lok Samadhan Party 2025. All Rights Reserved.</p>
+            </div>
+
+            <div class="box3">
+                <a href="Index.html">Home</a>||
+                <a href="About.html">About</a> ||
+                <a href="Register.html" target="_blank">Register Now</a>
+            </div>
+        </div>
+
+        <div id="icons">
+            <div class="icon">
+                <a href="https://www.facebook.com/"><img src="icon/facebook-removebg-preview.png" alt="facebook icon" width="30px"></a>
+                <a href="https://www.instagram.com/"><img src="icon/Instagram-removebg-preview.png" alt="instagram icon" width="30px"></a>
+                <a href="https://www.linkedin.com"><img src="icon/linkdin-removebg-preview.png" alt="linkedin icon" width="30px"></a>
+                <a href="https://x.com/?lang=en"><img src="icon/twitter-removebg-preview.png" alt="twitter icon" width="30px"></a>
+                <a href="https://www.youtube.com/"><img src="icon/youtubr-removebg-preview.png" alt="youtube icon" width="30px"></a>
+                <a href="https://web.telegram.org/k/"><img src="icon/telegram-removebg-preview-removebg-preview.png" alt="telegram icon" width="30px"></a>
+                
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.querySelector(".menu-toggle");
+    const navbar = document.querySelector(".navbar");
+
+    toggleButton.addEventListener("click", function () {
+        navbar.classList.toggle("active");
+    });
+});
+
+    </script>
+    
+</body>
+</html>

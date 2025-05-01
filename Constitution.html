@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our History || Lok Samadhan Party</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="favicon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* start main css style */
+        #history{
+            /* border: 1px solid black; */
+            background-color: cadetblue;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .our-history{
+            color: purple;
+            background-color: orange;
+            text-align: center;
+            border-radius: 5px;
+            width: 30%;
+        }
+
+        #para-container{
+                /* border: 1px solid black; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+        }
+
+        .title-div{
+            /* border: 1px solid black; */
+                /* background-color: aquamarine; */
+                width: 50%;
+                
+        }
+        
+
+
+        #map{
+            display: flex;
+            background-color: aliceblue;
+            border-radius: 20px;
+            /* width: 80%; */
+            /* margin-left: 10em; */
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            /* justify-content: space-evenly; */
+        }
+
+        .adress-div{
+                /* border: 1px solid black; */
+                height: 330px;
+                width: 400px;
+        }
+
+        .adress-div p{
+                font-size: 25px;
+                font-weight: bold;
+                padding: 1em;
+        }
+        .adress-div button{
+                background-color: aqua;
+                width: 40%;
+                margin-left: 1.5em;
+                border: none;
+                font-weight: bold;
+                border-radius: 10px;
+        }
+
+        .adress-div button:hover{
+                background-color: aquamarine;
+                box-shadow: 0px 0px 5px;
+        }
+
+        .map-div iframe{
+                border-radius: 10px;
+        }
+        
+            /* make responsive style */
+
+        /* responsive for large device */
+        @media screen and (max-width: 900px) and (min-width:1700px){
+            #service-div2, #service-div3{
+                    height: auto;
+                    padding: 10px;
+            }
+
+            .app-download{
+                    width: 50%;
+            }
+
+            .phone-img{
+                    width: 30%;
+                    
+            }
+
+            .container-div{
+                    width: 25%;
+                    /* gap: 20%; */
+            }
+
+            #map{
+                height: auto;
+            }
+
+            .adress-div{
+                    width: 30%;
+            }
+
+            .map-div{
+                    width: 30%;
+            }
+            .map-div iframe{
+                    width: 160%;
+            }
+        }
+
+        /* responsive for laptop */
+
+        @media screen and (max-width:900px){
+            #service-div2, #history, #para-container{
+                    height: auto;
+                    padding: 10px;
+            }
+
+            .title-div, .video-div{
+                    width: 90%;
+                    /* text-align: center; */
+            }
+
+            .video-div iframe{
+               width: 100%;
+            }
+
+            .iframe iframe{
+                    width: 250%;
+            }
+
+            .app-download{
+                    width: 50%;
+            }
+
+            .phone-img{
+                    width: 30%;
+                    
+            }
+
+            .container-div{
+                    width: 30%;
+            }
+
+            .adress-div{
+                    width: 30%;
+            }
+
+            .map-div{
+                    width: 30%;
+            }
+
+            .map-div iframe{
+                    width: 150%;
+            }
+
+        }
+
+        /* responsive for tablet */
+
+        @media screen and (max-width:768px){
+
+            #map,#history, #para-container{
+                    height: auto;
+                    
+            }
+
+            .title-div{
+                    width: 90%;
+                    text-align: center;
+            }
+            
+            .video-div iframe{
+                width: 100%;
+                height: 300px;
+            }
+
+            .iframe{
+                /* text-align: center; */
+                margin-right: 2em;
+            }
+
+            .adress-div{
+                    width: 80%;
+                    text-align: center;
+            }
+
+            .adress-div p{
+                line-height: 35px;
+            }
+
+            .adress-div button{
+                    margin-right: 5em;
+            }
+
+            .map-div{
+                    width: 40%;
+            }
+
+            .map-div{
+                    width: 85%;
+            }
+
+            .map-div iframe{
+                    width: 100%;
+            }
+        }
+
+        /* responsive for mobile phone */
+
+        @media screen and (max-width:472px){
+            .banner-div h1{
+                    font-size: 20px;
+            }
+
+             #map, #para-container{
+                    height: auto;
+                    
+            }
+
+            .title-div{
+                    width: 90%;
+                    text-align: center;
+            }
+            
+            .video-div iframe{
+                width: 100%;
+                height: 300px;
+            }
+
+            .iframe{
+                /* text-align: center; */
+                margin-right: 2em;
+            }
+
+            .adress-div{
+                    width: 80%;
+                    text-align: center;
+            }
+
+            .adress-div{
+                    width: 80%;
+            }
+
+            .map-div{
+                    width: 80%;
+            }
+
+
+            .adress-div p{
+                    text-align: center;
+            }
+
+            .adress-div button{
+                    margin-left: 6em;
+            }
+
+            .map-div iframe{
+                    width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="nav-div">
+                <div class="logo">
+                    <a href="Home.html"><img src="logo/LOK SAMADHAN PARTY LOGO.png" alt="logo"></a>
+                </div>
+                    <h1>LOK <span>SAMADHAN</span> PARTY </h1>
+                <ul class="navbar">
+                    <li>
+                        <a href="Index.html">Home</a>
+                        <a href="About.html">About</a>
+                        <a href="Gallery.html">Gallery</a>
+                        <a href="Service.html">Service</a>
+                        <a href="Event.html">Event</a>
+                        <a href="Leadership.html">Leadership</a>
+                        <a href="Contact.html">Contact</a>
+                        <a class="donate" href="Donate.html"><button>Donate Now</button></a>
+                        <a class="account" href="Account.html"> <img src="icon/account.png" alt="account icon" width="50px"></a>
+                    </li>
+                    
+                </ul>
+                <span class="menu-toggle">&#9776;</span>
+                
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="history">
+            <div class="our-history">
+                <h1>Constitution</h1>
+            </div>
+        </div><br>
+        
+        <div id="para-container">
+            <div class="title-div">
+                <p>In march 2025, a civil society movement was born in the backdrop of big-ticket corruption scandals that came to light during the Congress-led UPA regime. A group of activists from varied backgrounds had come together to demand the enactment of the Jan Lokpal Bill – a legislation that had been stuck in Parliamentary committees for decades. With public anger against corruption building up with every expose that came from the news media, the demand for a strong law that could deal with a corrupt political establishment found widespread support among ordinary Indians. Under the banner of India Against Corruption, Indians rose in protest against the government of the day, demanding the Jan Lokpal be passed immediately.</p>
+                <p>Spanning over two years, across hundreds of cities, towns, and villages, lakhs of people mobilised themselves for this cause. Protest marches, gheraos of politicians, social media campaigns – a revolution had begun. Led by social activist Anna Hazare, thousands of people in several locations sat on fasts on three separate occasions to build support for the Jan Lokpal Bill, and pressure the government into acting on people’s demand. At the end of the third and final fast, despite all the efforts of the IAC, the Parliament had still not come around to passing the Jan Lokpal.</p>
+            </div>
+
+            <div class="video-div">
+                <iframe width="560" height="315" style="border-radius: 10px;" src="https://www.youtube.com/embed/ztP_Ah6k3pE?si=twH4MlXj03h-Z5cS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+            </div>
+        </div><br>
+
+        <div id="para-container">
+
+            <div class="title-div">
+                <p>The failure of the government to agree to the people’s demands was the result of the deeply entrenched corruption that had decayed India’s political establishment. A Jan Lokpal was directly detrimental to the interests of the political parties and their leaders. That’s when one section of IAC activists, led by Arvind Kejriwal, decided that the only way to rid this country of corruption was to join politics, enter government, and clean up the system from within. Thus on the 2nd October 2012, the journey of the anti-corruption protest towards the political revolution called the Aam Aadmi Party began.</p>
+            </div>
+
+            <div class="video-div">
+                <iframe width="560" height="315" style="border-radius: 10px;" src="https://www.youtube.com/embed/ztP_Ah6k3pE?si=twH4MlXj03h-Z5cS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            </div>
+        </div>
+        <div id="map">
+            <div class="adress-div">
+                <p>
+                    केंद्रीय कार्यालय पता : <br></br>
+                    मकान नं - गांधीनगर कॉलोनी, <br>
+                    पोस्ट - सुन्दरपुर , <br>
+                    लखनऊ - 221005 </p>
+                    <a href="https://www.google.com/maps"><button>गूगल मैप पर देखे &rarr; </button></a>
+            </div>
+
+            <div class="map-div">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115408.09799831448!2d82.90870709861062!3d25.32089491994236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1742292313815!5m2!1sen!2sin" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+       </div>
+    </main>
+    
+    <footer>
+        <div id="footer">
+            <div class="div-container1">
+                <h2>Candidate Info</h2>
+                <p>K.P. Maurya </p>
+                <a href="#">Vill- Gopalpur Baragaon Varanasi</a> <br>
+                <a href="#">+910 698 784 235 <br> +91 695 847 5547</a> <br>
+                <a href="#">exam@gmail.com</a>
+            </div>
+
+            <div class="div-container2">
+                <h2>Quick Link</h2>
+                <a href="Youth.html">Youth Focus</a><br>
+                <a href="History.html">Our History</a> <br>
+                <a href="Our_leadership.html">Our Leadership</a><br>
+                <a href="Constitution.html">Condtitution</a><br>
+                <a href="Election.html">Election Symbol</a><br>
+            </div>
+
+            <div class="div-container3">
+                <h2>Media Resources</h2>
+                <a href="Press.html">Press Release</a><br>
+                <a href="Gallery.html">Photo Gallery</a><br>
+                <a href="Video.html">Video Gallery</a><br>
+                <a href="Privacy.html" target="_blank">Privacy Policy </a><br>
+                <a href="Terms.html" target="_blank">Tearm & Condition</a>
+            </div>
+
+            <div class="div-container4">
+                <form action="php">
+                    <h2>Newsletter</h2>
+                    <input type="text" placeholder="Your Name*"  required><br></br>
+                    <input type="text" placeholder="Your Email*"  required><br></br>
+                    <textarea name="feedback" id="10" placeholder="Send Massage" rows="10"  required></textarea><br>
+                    <button>Send Massage</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="copyright-div">
+            <div class="box1">
+                <p>Design & Developed By: Hindsol Software Pvt. Ltd.</p>
+            </div>
+
+            <div class="box2">
+                <p>&copy;Copyright Lok Samadhan Party 2025. All Rights Reserved.</p>
+            </div>
+
+            <div class="box3">
+                <a href="Index.html">Home</a> ||
+                <a href="About.html">About</a> ||
+                <a href="Register.html" target="_blank">Register Now</a>
+            </div>
+        </div>
+
+        <div id="icons">
+            <div class="icon">
+                <a href="https://www.facebook.com/"><img src="icon/facebook-removebg-preview.png" alt="facebook icon" width="30px"></a>
+                <a href="https://www.instagram.com/"><img src="icon/Instagram-removebg-preview.png" alt="instagram icon" width="30px"></a>
+                <a href="https://www.linkedin.com"><img src="icon/linkdin-removebg-preview.png" alt="linkedin icon" width="30px"></a>
+                <a href="https://x.com/?lang=en"><img src="icon/twitter-removebg-preview.png" alt="twitter icon" width="30px"></a>
+                <a href="https://www.youtube.com/"><img src="icon/youtubr-removebg-preview.png" alt="youtube icon" width="30px"></a>
+                <a href="https://web.telegram.org/k/"><img src="icon/telegram-removebg-preview-removebg-preview.png" alt="telegram icon" width="30px"></a>
+                
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.querySelector(".menu-toggle");
+    const navbar = document.querySelector(".navbar");
+
+    toggleButton.addEventListener("click", function () {
+        navbar.classList.toggle("active");
+    });
+});
+
+    </script>
+    
+</body>
+</html>
