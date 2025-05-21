@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact || Lok Samadhan Party</title>
+    <title>Contact || Lok Samadhan</title>
     <link rel="shortcut icon" href="favicon/favicon.ico" type="favicon">
     <link rel="stylesheet" href="style.css">
     <style>
-
         *{
-            margin: 0px;
+            margin: 0px ;
             padding: 0px;
+            box-sizing: border-box;
         }
 
-        /* start main style */
-
         #contact-div1{
-                /* background-color: lightblue; */
                 display: flex;
+                margin-top: -1.2em;
                 justify-content: center;
                 align-items: center;
                 flex-wrap: wrap;
@@ -26,15 +25,13 @@
 
         .contact-div1{
                 width: 100%;
-                height: 200px;
-                /* border: 1px solid black; */
-                /* height: 200px; */
+                height: 400px;
         }
 
         .contact-div1 img{
                 height: 400px;
                 width: 100%;
-                opacity: 0.5;
+                opacity: 0.4;
         }
 
         .contact-div1 h2{
@@ -43,12 +40,12 @@
             font-size: 3.5em;
             margin-top: -4em;
         }
-       
 
         #form{
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            margin-top: -8em;
             height:730px;
             align-items: center;
 
@@ -59,7 +56,6 @@
             height: 500px;
             width: 100%;
             text-align: center;
-            /* border: 1px solid black; */
         }
 
         .form input{
@@ -99,25 +95,23 @@
 
         .button:hover{
             color: white;
-            background: radial-gradient(green, black);
-            letter-spacing: 5px;
+            background-color: purple;
+            letter-spacing: 2px;
 
         }
 
         #map{
             display: flex;
             background-color: aliceblue;
+            background-size: cover;
+            background-repeat: no-repeat;
             border-radius: 20px;
-            /* width: 80%; */
-            /* margin-left: 10em; */
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            /* justify-content: space-evenly; */
         }
 
         .adress-div{
-                /* border: 1px solid black; */
                 height: 330px;
                 width: 400px;
         }
@@ -148,26 +142,11 @@
 
         /* end main style */
 
-        /* make responsive of all device */
-
-         /* make responsive for laptop */
-
-           /* make responsive style */
-
         /* responsive for large device */
         @media screen and (max-width: 900px) and (min-width:1700px){
-            #service-div2, #service-div3, #phone-container,#map{
+            #service-div2, #service-div3, #phone-container{
                     height: auto;
                     padding: 10px;
-            }
-
-            .contact-div1 h2{
-                    font-size: 3.5em;
-                    /* margin-top: -5em; */
-            }
-
-            .form{
-                    width: 100%;
             }
 
             .app-download{
@@ -181,7 +160,10 @@
 
             .container-div{
                     width: 25%;
-                    /* gap: 20%; */
+            }
+
+            #map{
+                height: auto;
             }
 
             .adress-div{
@@ -199,26 +181,17 @@
         /* responsive for laptop */
 
         @media screen and (max-width:900px){
-            #service-div2, #service-div3, #form, #map, #phone-container{
+            #service-div2, #service-div3, #map{
                     height: auto;
                     padding: 10px;
             }
 
-            .contact-div1 h2{
-                    font-size: 3.5em;
-                    /* margin-top: -5em; */
+            .form input{
+                    width: 90%;
             }
 
-          .form{
-                width: 100%;
-          }
-            .app-download{
-                    width: 50%;
-            }
-
-            .phone-img{
-                    width: 30%;
-                    
+            .form textarea{
+                    width: 90%;
             }
 
             .container-div{
@@ -227,6 +200,11 @@
 
             .adress-div{
                     width: 30%;
+            }
+
+            .adress-div button {
+                margin-left: 2em;
+                width: 50%;
             }
 
             .map-div{
@@ -243,18 +221,17 @@
 
         @media screen and (max-width:768px){
 
-            #form,#map, #phone-container{
+            #map{
                     height: auto;
                     
             }
 
-            .contact-div1 h2{
-                    font-size: 3.5em;
-                    /* margin-top: -5em; */
+            .form input{
+                    width: 90%;
             }
 
-            .form{
-                    width: 100%;
+            .form textarea{
+                    width: 90%;
             }
 
             .adress-div{
@@ -267,7 +244,8 @@
             }
 
             .adress-div button{
-                    margin-right: 5em;
+            margin-right: 2em;
+            width: 25%;
             }
 
             .map-div{
@@ -285,27 +263,33 @@
 
         /* responsive for mobile phone */
 
-        @media screen and (max-width:480px){
-            #form,#map, #phone-container{
-                    height: auto;
-                    
-            }
-
-            
+        @media screen and (max-width:472px){
             .banner-div h1{
                     font-size: 20px;
             }
 
+            .contact-div1{
+                    margin-top: -1.3em;
+            }
+
             .contact-div1 h2{
                     font-size: 2.5em;
-                    margin-top: -8em;
+                    margin-top: -6em;
             }
 
-            .form{
-                width: 100%;
+            .form input{
+                    width: 90%;
             }
 
-            
+            .form textarea{
+                    width: 90%;
+            }
+
+             #map{
+                    height: auto;
+                    
+            }
+
             .adress-div{
                     width: 80%;
             }
@@ -317,10 +301,13 @@
 
             .adress-div p{
                     text-align: center;
+                    line-height: 30px;
+                    font-size: 1.3em;
             }
 
             .adress-div button{
-                    margin-left: 6em;
+            margin-left: 1em;
+            width: 50%;
             }
 
             .map-div iframe{
@@ -330,51 +317,53 @@
            
         }
 
+
+      
     </style>
 </head>
+
 <body>
     <header>
         <nav id="navbar">
             <div class="nav-div">
                 <div class="logo">
-                    <a href="Home.html"><img src="logo/LOK SAMADHAN PARTY LOGO.png" alt="logo"></a>
+                    <a href="index.html"><img src="logo/LOK SAMADHAN PARTY LOGO.png" alt="logo"></a>
                 </div>
-                    <h1>LOK <span>SAMADHAN</span> PARTY </h1>
+                <h3>LOK <span>SAMADHAN</span> </h3>
                 <ul class="navbar">
                     <li>
-                        <a href="Index.html">Home</a>
+                        <a href="index.html">Home</a>
                         <a href="About.html">About</a>
                         <a href="Gallery.html">Gallery</a>
                         <a href="Service.html">Service</a>
                         <a href="Event.html">Event</a>
                         <a href="Leadership.html">Leadership</a>
                         <a href="Contact.html">Contact</a>
-                        <a class="donate" href="Donate.html"><button>Donate Now</button></a>
-                        <a class="account" href="Account.html"> <img src="icon/account.png" alt="account icon" width="50px"></a>
+                        <a class="donate" href="Donate.html" target="_blank"><button>Donate Now</button></a>
+                        <a class="account" href="Account.html" target="_blank"> <img src="icon/account.png" alt="account icon"
+                                width="50px"></a>
                     </li>
                 </ul>
                 <span class="menu-toggle">&#9776;</span>
-                
+
             </div>
         </nav>
     </header>
-
     <main>
-        <div id="contact-div">
+        <div id="contact-div1">
             <div class="contact-div1">
-                <img src="background/key-people-banner.jpg" alt="background">
-                <h2>Contact: Lok <span class="span">Samadhan </span> Party</h2>
+                <img src="background/purple and orange banner.jpg" alt="background">
+                <h2>Contact: Lok <span class="span">Samadhan </span></h2>
             </div>
         </div>
 
         <div id="form">
             <div class="form">
                 <form action=".php"><br>
-                    <input type="text" name="text" placeholder=" Enter Your Full Name*"  required><br></br>
-                    <input type="tel" name="tel" placeholder="Enter Your Mobile No.*" maxlength="10"  required><br></br>
+                    <input type="text" name="text" placeholder=" Enter Your Full Name*"  required><br><br>
+                    <input type="tel" name="tel" placeholder="Enter Your Mobile No.*" maxlength="10"  required><br><br>
                     <input type="email" name="email" placeholder="Enter Your Email*" required><br></br>
-                    <textarea name="feedback" id="10" placeholder="Send Massage" rows="10" class="feed-back"  required></textarea><br></br>
-                    <!-- <input type="button" value="Send" class="button"> -->
+                    <textarea name="feedback" id="10" placeholder="Send Massage" rows="10" class="feed-back"  required></textarea><br><br>
                     <button class="button">Send Massage</button>
 
                 </form>
@@ -384,28 +373,27 @@
         <div id="map">
             <div class="adress-div">
                 <p>
-                    केंद्रीय कार्यालय पता : <br></br>
-                    मकान नं - गांधीनगर कॉलोनी, <br>
-                    पोस्ट - सुन्दरपुर , <br>
-                    लखनऊ - 221005 </p>
-                    <a href="https://www.google.com/maps"><button>गूगल मैप पर देखे &rarr; </button></a>
+                    केंद्रीय कार्यालय पता : <br><br>
+                    ग्राम सैरा गोपालपुर, <br>
+                    पोस्ट - बड़ागांव , <br>
+                    वाराणसी - 221204 </p>
+                <a href="https://www.google.co.in/maps/place/Ideal+Public+School,+Saira,+Baragaon,+Varanasi/@25.4153648,82.8383599,15.98z/data=!4m6!3m5!1s0x398fd526c8991be1:0x2b0d7cc4a96ad499!8m2!3d25.4143467!4d82.8337805!16s%2Fg%2F11gjj20kcg?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D"><button>गूगल मैप पर देखे &rarr; </button></a>
             </div>
 
             <div class="map-div">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115408.09799831448!2d82.90870709861062!3d25.32089491994236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1742292313815!5m2!1sen!2sin" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7295.499174570451!2d82.83835985689049!3d25.415364750908974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398fd526c8991be1%3A0x2b0d7cc4a96ad499!2sIdeal%20Public%20School%2C%20Saira%2C%20Baragaon%2C%20Varanasi!5e0!3m2!1sen!2sin!4v1746527884655!5m2!1sen!2sin" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-       </div>
+        </div>
+    </main> <br>
 
-    </main>
-    
     <footer>
         <div id="footer">
             <div class="div-container1">
                 <h2>Candidate Info</h2>
                 <p>K.P. Maurya </p>
-                <a href="#">Vill- Gopalpur Baragaon Varanasi</a> <br>
-                <a href="#">+910 698 784 235 <br> +91 695 847 5547</a> <br>
-                <a href="#">exam@gmail.com</a>
+                <a href="https://www.google.co.in/maps/place/Ideal+Public+School,+Saira,+Baragaon,+Varanasi/@25.4153648,82.8383599,15.98z/data=!4m6!3m5!1s0x398fd526c8991be1:0x2b0d7cc4a96ad499!8m2!3d25.4143467!4d82.8337805!16s%2Fg%2F11gjj20kcg?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D">Vill- Saira Gopalpur Baragaon Varanasi</a> <br>
+               <a href="QR Code/Contact QR Code.jpeg" target="_blank">+91 902 656 5151 <br> +91 636 377 7534</a> <br>
+                <a href="mailto:aks738059@gmail.com">loksamadha info@gmail.com</a>
             </div>
 
             <div class="div-container2">
@@ -427,23 +415,22 @@
             </div>
 
             <div class="div-container4">
-                <form action=".php">
+                <form action="php">
                     <h2>Newsletter</h2>
-                    <input type="text" placeholder="Your Name*"  required><br></br>
+                    <input type="text" placeholder="Your Name*" required><br></br>
                     <input type="text" placeholder="Your Email*" required><br></br>
-                    <textarea name="feedback" id="10" placeholder="Send Massage" rows="10" required></textarea><br>
-                    <button>Send Massage</button>
+                    <input type="submit" value="Send"id="send-button">
                 </form>
             </div>
         </div>
 
         <div id="copyright-div">
             <div class="box1">
-                <p>Design & Developed By: Hindsol Software Pvt. Ltd.</p>
+                <a href="https://www.hindsol.com"><p>Design & Developed By: Hindsol Software Pvt. Ltd.</p></a> 
             </div>
 
             <div class="box2">
-                <p>&copy;Copyright Lok Samadhan Party 2025. All Rights Reserved.</p>
+                <p>&copy;Copyright Lok Samadhan 2025. All Rights Reserved.</p>
             </div>
 
             <div class="box3">
@@ -455,27 +442,28 @@
 
         <div id="icons">
             <div class="icon">
-                <a href="https://www.facebook.com/"><img src="icon/facebook-removebg-preview.png" alt="facebook icon" width="30px"></a>
-                <a href="https://www.instagram.com/"><img src="icon/Instagram-removebg-preview.png" alt="instagram icon" width="30px"></a>
-                <a href="https://www.linkedin.com"><img src="icon/linkdin-removebg-preview.png" alt="linkedin icon" width="30px"></a>
-                <a href="https://x.com/?lang=en"><img src="icon/twitter-removebg-preview.png" alt="twitter icon" width="30px"></a>
-                <a href="https://www.youtube.com/"><img src="icon/youtubr-removebg-preview.png" alt="youtube icon" width="30px"></a>
-                <a href="https://web.telegram.org/k/"><img src="icon/telegram-removebg-preview-removebg-preview.png" alt="telegram icon" width="30px"></a>
-                
+                <a href="https://www.facebook.com/"><img src="icon/facebook-icon-removebg-preview.png" alt="facebook icon" width="30px"></a>
+                <a href="https://www.instagram.com/"><img src="icon/instagram-icon-removebg-preview.png" alt="instagram icon" width="30px"></a>
+                <a href="https://www.linkedin.com"><img src="icon/linkedin-removebg-preview.png" alt="linkedin icon" width="30px"></a>
+                <a href="https://x.com/?lang=en"><img src="icon/twitter-icon-removebg-preview.png" alt="twitter icon" width="30px"></a>
+                <a href="https://www.youtube.com/"><img src="icon/youtube-removebg-preview.png" alt="youtube icon" width="30px"></a>
+                <a href="https://web.telegram.org/k/"><img src="icon/telegran-icon-removebg-preview.png" alt="telegram icon" width="30px"></a>
+
             </div>
         </div>
     </footer>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.querySelector(".menu-toggle");
-    const navbar = document.querySelector(".navbar");
+            const toggleButton = document.querySelector(".menu-toggle");
+            const navbar = document.querySelector(".navbar");
 
-    toggleButton.addEventListener("click", function () {
-        navbar.classList.toggle("active");
-    });
-});
+            toggleButton.addEventListener("click", function () {
+                navbar.classList.toggle("active");
+            });
+        });
 
     </script>
-    
+
 </body>
+
 </html>

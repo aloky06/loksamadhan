@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register || Lok Samadhan Party</title>
+    <title>Log In || Lok Samadhan</title>
     <link rel="shortcut icon" href="favicon/favicon.ico" type="favicon">
     <style>
         * {
@@ -13,8 +14,8 @@
             font-family: Arial, sans-serif;
         }
 
-        body{
-            background: linear-gradient(orange, purple);
+        body {
+            background: rgb(225, 227, 228);
         }
 
         #register {
@@ -52,7 +53,8 @@
             margin-top: 10px;
         }
 
-        select, input[type="text"] {
+        select,
+        input[type="text"] {
             width: 100%;
             height: 35px;
             margin-top: 5px;
@@ -87,80 +89,85 @@
     </style>
 </head>
 <body>
-
     <div id="register">
         <div class="registration-div1">
             <a href="index.html"><img src="logo/LOK SAMADHAN PARTY LOGO.png" alt="logo" width="100px"></a>
-            <h2>Lok Samadhan Party Member Registration</h2>
+            <h2>Lok Samadhan Member Registration</h2>
             <p>Join the fastest-growing political party in the history of India.</p>
         </div>
         <form action=".php">
-        <div class="registration-div2">
-            <label for="state">State/UT:</label>
-            <select name="state" id="state">
-                <option value="">Select</option>
-                <option value="andaman">Andaman And Nicobar Island</option>
-                <option value="andhra">Andhra Pradesh</option>
-                <option value="arunachal">Arunachal Pradesh</option>
-                <option value="assam">Assam</option>
-                <option value="bihar">Bihar</option>
-                <option value="chandigarh">Chandigarh</option>
-                <option value="chhattisgarh">Chhattisgarh</option>
-                <option value="dadra">Dadra And Nagar Haveli And Daman And Diu</option>
-                <option value="delhi">Delhi</option>
-                <option value="goa">Goa</option>
-                <option value="gujarat">Gujarat</option>
-                <option value="haryana">Haryana</option>
-                <option value="himachal">Himachal Pradesh</option>
-                <option value="jk">Jammu And Kashmir</option>
-                <option value="jharkhand">Jharkhand</option>
-                <option value="karnataka">Karnataka</option>
-                <option value="kerala">Kerala</option>
-                <option value="ladakh">Ladakh</option>
-                <option value="lakshadweep">Lakshadweep</option>
-                <option value="mp">Madhya Pradesh</option>
-                <option value="maharashtra">Maharashtra</option>
-                <option value="manipur">Manipur</option>
-                <option value="meghalaya">Meghalaya</option>
-                <option value="mizoram">Mizoram</option>
-                <option value="nagaland">Nagaland</option>
-                <option value="odisha">Odisha</option>
-                <option value="puducherry">Puducherry</option>
-                <option value="punjab">Punjab</option>
-                <option value="rajasthan">Rajasthan</option>
-                <option value="sikkim">Sikkim</option>
-                <option value="tamilnadu">Tamil Nadu</option>
-                <option value="telangana">Telangana</option>
-                <option value="tripura">Tripura</option>
-                <option value="up">Uttar Pradesh</option>
-                <option value="uttarakhand">Uttarakhand</option>
-                <option value="wb">West Bengal</option>
-            </select>
+            <div class="registration-div2">
+                <label for="state">State/UT:</label>
+                <select name="state" id="state">
+                    <option value="">Select</option>
+                    <option value="andaman">Andaman And Nicobar Island</option>
+                    <option value="andhra">Andhra Pradesh</option>
+                    <option value="arunachal">Arunachal Pradesh</option>
+                    <option value="assam">Assam</option>
+                    <option value="bihar">Bihar</option>
+                    <option value="chandigarh">Chandigarh</option>
+                    <option value="chhattisgarh">Chhattisgarh</option>
+                    <option value="dadra">Dadra And Nagar Haveli And Daman And Diu</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="goa">Goa</option>
+                    <option value="gujarat">Gujarat</option>
+                    <option value="haryana">Haryana</option>
+                    <option value="himachal">Himachal Pradesh</option>
+                    <option value="jk">Jammu And Kashmir</option>
+                    <option value="jharkhand">Jharkhand</option>
+                    <option value="karnataka">Karnataka</option>
+                    <option value="kerala">Kerala</option>
+                    <option value="ladakh">Ladakh</option>
+                    <option value="lakshadweep">Lakshadweep</option>
+                    <option value="mp">Madhya Pradesh</option>
+                    <option value="maharashtra">Maharashtra</option>
+                    <option value="manipur">Manipur</option>
+                    <option value="meghalaya">Meghalaya</option>
+                    <option value="mizoram">Mizoram</option>
+                    <option value="nagaland">Nagaland</option>
+                    <option value="odisha">Odisha</option>
+                    <option value="puducherry">Puducherry</option>
+                    <option value="punjab">Punjab</option>
+                    <option value="rajasthan">Rajasthan</option>
+                    <option value="sikkim">Sikkim</option>
+                    <option value="tamilnadu">Tamil Nadu</option>
+                    <option value="telangana">Telangana</option>
+                    <option value="tripura">Tripura</option>
+                    <option value="up">Uttar Pradesh</option>
+                    <option value="uttarakhand">Uttarakhand</option>
+                    <option value="wb">West Bengal</option>
+                </select>
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
 
-            <label for="mobile">Mobile Number:</label>
-            <input type="text" id="mobile" required>
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" id="mobile" required>
 
-            <div class="checkbox-label">
-                <input type="checkbox" required>
-                <label>
-                    I am an Indian citizen and above 18 years of age. I am not employed in any government position, nor am I a member of any other political party registered with the Election Commission of India. I am not affiliated with any organization whose ideology, policies, or activities conflict with the objectives of this party. Furthermore, I have not been convicted of any offense involving moral turpitude.
-                </label>
+                <div class="checkbox-label">
+                    <input type="checkbox" required>
+                    <label>
+                        I am an Indian citizen and above 18 years of age. I am not employed in any government position,
+                        nor am I a member of any other political party registered with the Election Commission of India.
+                        I am not affiliated with any organization whose ideology, policies, or activities conflict with
+                        the objectives of this party. Furthermore, I have not been convicted of any offense involving
+                        moral turpitude.
+                    </label>
+                </div>
+
+                <div class="checkbox-label">
+                    <input type="checkbox" required>
+                    <label>
+                        I hereby consent to receiving communications from the party through various channels, including
+                        written, digital, and audio-visual formats. These may include phone calls, SMS, IVR, emails, or
+                        postal correspondence.
+                    </label>
+                </div>
+
+                <button type="submit" class="btn">Register</button>
+                <a href="index.html"><input type="button" value="Go To Homepage" class="btn"></a>
             </div>
-
-            <div class="checkbox-label">
-                <input type="checkbox" required>
-                <label>
-                    I hereby consent to receiving communications from the party through various channels, including written, digital, and audio-visual formats. These may include phone calls, SMS, IVR, emails, or postal correspondence.
-                </label>
-            </div>
-
-            <button type="submit" class="btn">Register</button>
-        </div>
     </div>
-</form>
-
+    </form>
 </body>
 </html>

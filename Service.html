@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service || Lok Samadhan Party</title>
+    <title>Service || Lok Samadhan</title>
     <link rel="shortcut icon" href="favicon/favicon.ico" type="favicon">
     <link rel="stylesheet" href="style.css">
     <style>
-          #service-div1{
-                /* background-color: lightblue; */
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #service-div1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
 
         }
 
-        .service-div1{
-                width: 100%;
-                height: 400px;
-                /* border: 1px solid black; */
-                /* height: 200px; */
+        .service-div1 {
+            width: 100%;
+            height: 400px;
+            margin-top: -1.2em;
         }
 
-        .service-div1 img{
-                height: 400px;
-                width: 100%;
-                opacity: 0.5;
+        .service-div1 img {
+            height: 400px;
+            width: 100%;
+            opacity: 0.4;
         }
 
-        .service-div1 h2{
+        .service-div1 h2 {
             color: black;
             text-align: center;
             font-size: 3.5em;
             margin-top: -4em;
         }
 
-        #service-div2, #service-div3{
-            /* border: 1px solid black; */
+        #service-div2,
+        #service-div3 {
             height: 300px;
             display: flex;
             justify-content: center;
@@ -46,8 +50,7 @@
             flex-wrap: wrap;
         }
 
-        .container-div{
-            /* border: 1px solid black; */
+        .container-div {
             height: 230px;
             background-color: antiquewhite;
             border-radius: 10px;
@@ -56,259 +59,261 @@
             justify-content: center;
             align-items: center;
             transition: all 5s ease;
-            /* gap: 40px; */
         }
 
-        .container-div:hover{
-                background-color:red;    /*text ko hovar kare ke liye*/
-                color: white;
-        }
-
-        .container-div p:hover{
-                color: white;
-        }
 
         /* map----------------------------- */
-        #map{
+        #map {
             display: flex;
             background-color: aliceblue;
             border-radius: 20px;
-            /* width: 80%; */
-            /* margin-left: 10em; */
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            /* justify-content: space-evenly; */
         }
 
-        .adress-div{
-                /* border: 1px solid black; */
-                height: 330px;
-                width: 400px;
+        .adress-div {
+            height: 330px;
+            width: 400px;
         }
 
-        .adress-div p{
-                font-size: 25px;
-                font-weight: bold;
-                padding: 1em;
-        }
-        .adress-div button{
-                background-color: aqua;
-                width: 40%;
-                margin-left: 1.5em;
-                border: none;
-                font-weight: bold;
-                border-radius: 10px;
+        .adress-div p {
+            font-size: 25px;
+            font-weight: bold;
+            padding: 1em;
         }
 
-        .adress-div button:hover{
-                background-color: aquamarine;
-                box-shadow: 0px 0px 5px;
+        .adress-div button {
+            background-color: aqua;
+            width: 40%;
+            margin-left: 1.5em;
+            border: none;
+            font-weight: bold;
+            border-radius: 10px;
         }
 
-        .map-div iframe{
-                border-radius: 10px;
+        .adress-div button:hover {
+            background-color: aquamarine;
+            box-shadow: 0px 0px 5px;
         }
 
-        #phone-container{
-                /* border: 1px solid black; */
-                background-color: rgb(116, 112, 116);
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: space-around;
+        .map-div iframe {
+            border-radius: 10px;
         }
 
-        .app-download h1{
-                font-size: 40px;
-                color: orange;
-                /* padding-left: 10px; */
+        #phone-container {
+            background-color: rgb(116, 112, 116);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
         }
 
-        .app-download p{
-                font-size: 21px;
-                color: orange;
-                font-weight: bold;
-                
+        .app-download h1 {
+            font-size: 40px;
+            color: orange;
         }
 
-        .phone-img img{
-                width: 60%;
-                /* float: right; */
-                height: auto;
-                /* margin-left: 11em; */
+        .app-download p {
+            font-size: 21px;
+            color: orange;
+            font-weight: bold;
         }
 
-
-        /* make responsive style */
+        .phone-img img {
+            width: 60%;
+            height: auto;
+        }
 
         /* responsiver for large screen */
-        @media screen and (min-width: 893px){
-            #service-div2, #service-div3, #phone-container{
-                    height: auto;
-                    
+        @media screen and (min-width: 893px) {
+
+            #service-div2,
+            #service-div3,
+            #phone-container {
+                height: auto;
+
             }
 
-            .app-download{
-                    width: 50%;
+            .app-download {
+                width: 50%;
             }
 
-            .phone-img{
-                    width: 35%;
-                    
+            .phone-img {
+                width: 35%;
+
             }
 
-            .container-div{
-                    width: 30%;
-                    margin-top: 2em;
+            .container-div {
+                width: 30%;
+                margin-top: 2em;
             }
 
-            #map{
+            #map {
                 height: auto;
             }
 
         }
 
-        
         /* responsive for laptop */
+        @media screen and (max-width:900px) {
 
-        @media screen and (max-width:900px){
-            #service-div2, #service-div3, #map, #phone-container{
-                    height: auto;
-                    padding: 10px;
+            #service-div2,
+            #service-div3,
+            #map,
+            #phone-container {
+                height: auto;
+                padding: 10px;
             }
 
-            .app-download{
-                    width: 50%;
+            .app-download {
+                width: 50%;
             }
 
-            .phone-img{
-                    width: 50%;
-                    
+            .phone-img {
+                width: 50%;
+
             }
 
-            .container-div{
-                    width: 30%;
+            .container-div {
+                width: 30%;
             }
 
-            .adress-div{
-                    width: 30%;
+            .adress-div {
+                width: 30%;
             }
 
-            .map-div{
-                    width: 30%;
+            .adress-div button {
+                margin-left: 2em;
+                width: 50%;
             }
 
-            .map-div iframe{
-                    width: 150%;
+            .map-div {
+                width: 30%;
+            }
+
+            .map-div iframe {
+                width: 150%;
             }
 
         }
 
         /* responsive for tablet */
+        @media screen and (max-width:768px) {
 
-        @media screen and (max-width:768px){
+            #service-div2,
+            #service-div3,
+            #map,
+            #phone-container {
+                height: auto;
 
-            #service-div2, #service-div3, #map,  #phone-container{
-                    height: auto;
-                    
             }
 
-            .app-download{
-                    width: 60%;
-                    text-align: center;
+            .app-download {
+                width: 60%;
+                text-align: center;
             }
 
-            .phone-img{
-                    width: 60%;
-                    text-align: center;
+            .phone-img {
+                width: 60%;
+                text-align: center;
             }
 
-            .phone-img img{
-                   margin-right: 2em;
+            .phone-img img {
+                margin-right: 2em;
             }
 
 
-            .container-div{
-                    width: 40%;
-                    margin-bottom: 30px;
-                    
+            .container-div {
+                width: 40%;
+                margin-bottom: 30px;
+
             }
 
-            .adress-div{
-                    width: 80%;
-                    text-align: center;
+            .adress-div {
+                width: 80%;
+                text-align: center;
             }
 
-            .adress-div p{
+            .adress-div p {
                 line-height: 35px;
             }
 
             .adress-div button{
-                    margin-right: 5em;
+            margin-right: 2em;
+            width: 25%;
+         }
+
+            .map-div {
+                width: 100%;
             }
 
-            .map-div{
-                    width: 40%;
-            }
-
-            .map-div iframe{
-                    width: 120%;
+            .map-div iframe {
+                width: 100%;
             }
         }
 
         /* responsive for mobile phone */
-
-        @media screen and (max-width:480px){
-            .banner-div h1{
-                    font-size: 20px;
+        @media screen and (max-width:480px) {
+            .banner-div h1 {
+                font-size: 20px;
             }
 
-            #service-div2, #service-div3, #map, #phone-container{
-                    height: auto;
-                    
+            #service-div2,
+            #service-div3,
+            #map,
+            #phone-container {
+                height: auto;
+
             }
 
-            .app-download{
-                    width: 100%;
-                    text-align: center;
+            .service-div1{
+                margin-top: -2.6em;
             }
 
-            .phone-img{
-                    width: 100%;
-                    /* height: auto; */
-                    text-align: center;
+            .service-div1 h2{
+                    font-size: 2.5em;
+                    margin-top: -6em;
             }
 
-            .container-div{
-                    width: 80%;
+            .app-download {
+                width: 100%;
+                text-align: center;
             }
 
-            .adress-div{
-                    width: 100%;
+            .phone-img {
+                width: 100%;
+                text-align: center;
             }
 
-            .map-div{
-                    width: 100%;
+            .container-div {
+                width: 93%;
             }
 
+            .adress-div {
+                width: 100%;
+            }
 
-            .adress-div p{
-                    text-align: center;
+            .map-div {
+                width: 100%;
+            }
+
+            .adress-div p {
+                text-align: center;
+                line-height: 30px;
+                font-size: 1.3em;
             }
 
             .adress-div button{
-                    margin-left: 6em;
+            margin-left: 1em;
+            width: 50%;
             }
 
-          
-            .map-div iframe{
-                    width: 100%;
+            .map-div iframe {
+                width: 100%;
             }
         }
-
-
     </style>
 </head>
 <body>
@@ -316,24 +321,25 @@
         <nav id="navbar">
             <div class="nav-div">
                 <div class="logo">
-                    <a href="Home.html"><img src="logo/LOK SAMADHAN PARTY LOGO.png" alt="logo"></a>
+                    <a href="index.html"><img src="logo/LOK SAMADHAN PARTY LOGO.png" alt="logo"></a>
                 </div>
-                    <h1>LOK <span>SAMADHAN</span> PARTY </h1>
+                <h3>LOK <span>SAMADHAN</span> </h3>
                 <ul class="navbar">
                     <li>
-                        <a href="Home.html">Home</a>
+                        <a href="index.html">Home</a>
                         <a href="About.html">About</a>
                         <a href="Gallery.html">Gallery</a>
                         <a href="Service.html">Service</a>
                         <a href="Event.html">Event</a>
                         <a href="Leadership.html">Leadership</a>
                         <a href="Contact.html">Contact</a>
-                        <a class="donate" href="Donate.html"><button>Donate Now</button></a>
-                        <a class="account" href="Account.html"> <img src="icon/account.png" alt="account icon" width="50px"></a>
+                        <a class="donate" href="Donate.html" target="_blank"><button>Donate Now</button></a>
+                        <a class="account" href="Account.html" target="_blank"> <img src="icon/account.png" alt="account icon"
+                                width="50px"></a>
                     </li>
                 </ul>
                 <span class="menu-toggle">&#9776;</span>
-               
+
             </div>
         </nav>
     </header>
@@ -341,27 +347,29 @@
     <main>
         <div id="banner-div">
             <div class="service-div1">
-                <img src="background/key-people-banner.jpg" alt="background">
-                <h2>Service: Lok <span class="span">Samadhan </span> Party</h2>
+                <img src="background/purple and orange banner.jpg" alt="background">
+                <h2>Service: Lok <span class="span">Samadhan </span></h2>
             </div>
         </div>
-
         <div id="service-div2">
             <div class="container-div">
                 <h2>Join Volunteers </h2>
-                <p>Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporaryly incididunt ugt labore.</p>
+                <p>Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporaryly incididunt
+                    ugt labore.</p>
                 <a href="#">Read More</a>
             </div>
 
             <div class="container-div">
                 <h2>Our Mission </h2>
-                <p>Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporaryly incididunt ugt labore.</p>
+                <p>Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporaryly incididunt
+                    ugt labore.</p>
                 <a href="#">Read More</a>
             </div>
 
             <div class="container-div">
                 <h2>Become Volunteer </h2>
-                <p>Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporaryly incididunt ugt labore.</p>
+                <p>Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporaryly incididunt
+                    ugt labore.</p>
                 <a href="#">Read More</a>
             </div>
         </div>
@@ -369,19 +377,22 @@
         <div id="service-div3">
             <div class="container-div">
                 <h2>24/7 Support </h2>
-                <p>Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporaryly incididunt ugt labore.</p>
+                <p>Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporaryly incididunt
+                    ugt labore.</p>
                 <a href="#">Read More</a>
             </div>
 
             <div class="container-div">
                 <h2>Education Policy </h2>
-                <p>Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporaryly incididunt ugt labore.</p>
+                <p>Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporaryly incididunt
+                    ugt labore.</p>
                 <a href="#">Read More</a>
             </div>
 
             <div class="container-div">
                 <h2>Our Party Growing </h2>
-                <p>Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporaryly incididunt ugt labore.</p>
+                <p>Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporaryly incididunt
+                    ugt labore.</p>
                 <a href="#">Read More</a>
             </div>
         </div><br>
@@ -390,45 +401,43 @@
             <div class="app-download">
                 <h1>जुड़े रहें, सशक्त बनें, <br>
                     लोक समाधान ऐप डाउनलोड करें!</h1>
-                    <p>लोक समाधान ऐप डाउनलोड करें, उत्तर प्रदेश के बदलाव में शामिल हों। <br>
-                        वास्तविक समय के अपडेट, आपके पंचायत और विधानसभा क्षेत्र से खास खबरें, और आंदोलन में जुड़ने के तरीके - सब एक ही जगह पर!
-                        </p><br></br
-                        >
-                        <a href="https://www.apple.com/in/app-store/"><img src="img/appstore-removebg-preview.png" alt="app store" width="180px"></a>
-                        <a href="https://play.google.com/store/games?hl=en"><img src="img/google_play-removebg-preview.png" alt="google play" width="180px"></a>
+                <p>लोक समाधान ऐप डाउनलोड करें, उत्तर प्रदेश के बदलाव में शामिल हों। <br>
+                    वास्तविक समय के अपडेट, आपके पंचायत और विधानसभा क्षेत्र से खास खबरें, और आंदोलन में जुड़ने के तरीके -
+                    सब एक ही जगह पर!
+                </p><br></br>
+                <a href="https://www.apple.com/in/app-store/"><img src="img/appstore-removebg-preview.png"
+                        alt="app store" width="180px"></a>
+                <a href="https://play.google.com/store/games?hl=en"><img src="img/google_play-removebg-preview.png"
+                        alt="google play" width="180px"></a>
             </div>
-
             <div class="phone-img">
                 <img src="img/mobile photo.png" alt="mobile phone">
             </div>
         </div><br>
-
-       <div id="map">
+        <div id="map">
             <div class="adress-div">
                 <p>
-                    केंद्रीय कार्यालय पता : <br></br>
-                    मकान नं - गांधीनगर कॉलोनी, <br>
-                    पोस्ट - सुन्दरपुर , <br>
-                    लखनऊ - 221005 </p>
-                    <a href="https://www.google.com/maps"><button>गूगल मैप पर देखे &rarr; </button></a>
+                    केंद्रीय कार्यालय पता : <br><br>
+                    ग्राम सैरा गोपालपुर, <br>
+                    पोस्ट - बड़ागांव , <br>
+                    वाराणसी - 221204 </p>
+                <a href="https://www.google.co.in/maps/place/Ideal+Public+School,+Saira,+Baragaon,+Varanasi/@25.4153648,82.8383599,15.98z/data=!4m6!3m5!1s0x398fd526c8991be1:0x2b0d7cc4a96ad499!8m2!3d25.4143467!4d82.8337805!16s%2Fg%2F11gjj20kcg?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D"><button>गूगल मैप पर देखे &rarr; </button></a>
             </div>
 
             <div class="map-div">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115408.09799831448!2d82.90870709861062!3d25.32089491994236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1742292313815!5m2!1sen!2sin" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7295.499174570451!2d82.83835985689049!3d25.415364750908974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398fd526c8991be1%3A0x2b0d7cc4a96ad499!2sIdeal%20Public%20School%2C%20Saira%2C%20Baragaon%2C%20Varanasi!5e0!3m2!1sen!2sin!4v1746527884655!5m2!1sen!2sin" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-       </div>
+        </div>
+    </main><br>
 
-        
-    </main> <br>
-    
     <footer>
         <div id="footer">
             <div class="div-container1">
                 <h2>Candidate Info</h2>
                 <p>K.P. Maurya </p>
-                <a href="#">Vill- Gopalpur Baragaon Varanasi</a> <br>
-                <a href="#">+910 698 784 235 <br> +91 695 847 5547</a> <br>
-                <a href="#">exam@gmail.com</a>
+                <a href="https://www.google.co.in/maps/place/Ideal+Public+School,+Saira,+Baragaon,+Varanasi/@25.4153648,82.8383599,15.98z/data=!4m6!3m5!1s0x398fd526c8991be1:0x2b0d7cc4a96ad499!8m2!3d25.4143467!4d82.8337805!16s%2Fg%2F11gjj20kcg?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D">Vill- Saira Gopalpur Baragaon Varanasi</a> <br>
+               <a href="QR Code/Contact QR Code.jpeg" target="_blank">+91 902 656 5151 <br> +91 636 377 7534</a> <br>
+                <a href="mailto:aks738059@gmail.com">loksamadha info@gmail.com</a>
             </div>
 
             <div class="div-container2">
@@ -452,23 +461,19 @@
             <div class="div-container4">
                 <form action="php">
                     <h2>Newsletter</h2>
-                    <input type="text" placeholder="Your Name*"  required><br></br>
-                    <input type="text" placeholder="Your Email*"  required><br></br>
-                    <textarea name="feedback" id="10" placeholder="Send Massage" rows="10"  required></textarea><br>
-                    <button>Send Massage</button>
+                    <input type="text" placeholder="Your Name*" required><br><br>
+                    <input type="text" placeholder="Your Email*" required><br><br>
+                    <input type="submit" value="Send"id="send-button">
                 </form>
             </div>
         </div>
-
         <div id="copyright-div">
             <div class="box1">
-                <p>Design & Developed By: Hindsol Software Pvt. Ltd.</p>
+                <a href="https://www.hindsol.com"><p>Design & Developed By: Hindsol Software Pvt. Ltd.</p></a> 
             </div>
-
             <div class="box2">
-                <p>&copy;Copyright Lok Samadhan Party 2025. All Rights Reserved.</p>
+                <p>&copy;Copyright Lok Samadhan 2025. All Rights Reserved.</p>
             </div>
-
             <div class="box3">
                 <a href="Index.html">Home</a> ||
                 <a href="About.html">About</a> ||
@@ -478,27 +483,28 @@
 
         <div id="icons">
             <div class="icon">
-                <a href="https://www.facebook.com/"><img src="icon/facebook-removebg-preview.png" alt="facebook icon" width="30px"></a>
-                <a href="https://www.instagram.com/"><img src="icon/Instagram-removebg-preview.png" alt="instagram icon" width="30px"></a>
-                <a href="https://www.linkedin.com"><img src="icon/linkdin-removebg-preview.png" alt="linkedin icon" width="30px"></a>
-                <a href="https://x.com/?lang=en"><img src="icon/twitter-removebg-preview.png" alt="twitter icon" width="30px"></a>
-                <a href="https://www.youtube.com/"><img src="icon/youtubr-removebg-preview.png" alt="youtube icon" width="30px"></a>
-                <a href="https://web.telegram.org/k/"><img src="icon/telegram-removebg-preview-removebg-preview.png" alt="telegram icon" width="30px"></a>
-                
+                <a href="https://www.facebook.com/"><img src="icon/facebook-icon-removebg-preview.png" alt="facebook icon" width="30px"></a>
+                <a href="https://www.instagram.com/"><img src="icon/instagram-icon-removebg-preview.png" alt="instagram icon" width="30px"></a>
+                <a href="https://www.linkedin.com"><img src="icon/linkedin-removebg-preview.png" alt="linkedin icon" width="30px"></a>
+                <a href="https://x.com/?lang=en"><img src="icon/twitter-icon-removebg-preview.png" alt="twitter icon" width="30px"></a>
+                <a href="https://www.youtube.com/"><img src="icon/youtube-removebg-preview.png" alt="youtube icon" width="30px"></a>
+                <a href="https://web.telegram.org/k/"><img src="icon/telegran-icon-removebg-preview.png" alt="telegram icon" width="30px"></a>
+
             </div>
         </div>
     </footer>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.querySelector(".menu-toggle");
-    const navbar = document.querySelector(".navbar");
+            const toggleButton = document.querySelector(".menu-toggle");
+            const navbar = document.querySelector(".navbar");
 
-    toggleButton.addEventListener("click", function () {
-        navbar.classList.toggle("active");
-    });
-});
+            toggleButton.addEventListener("click", function () {
+                navbar.classList.toggle("active");
+            });
+        });
 
     </script>
-    
+
 </body>
+
 </html>

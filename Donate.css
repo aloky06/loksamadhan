@@ -1,31 +1,60 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
-   background-image: url(background/donate_banner.jpg);
+   background-image: url(background/donate\ banner-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+
 /*  start main css style */
+
+#homepage-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.homepage-button{
+    height: 50px;
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+    margin-top: 1em;
+    font-size: 20px;
+    background: none;
+    border: 1px solid orange;
+    border-radius: 5px;
+}
 #pradesh-div{
     display: inline;
     justify-content: center;
-    /* float: right; */
     flex-wrap: wrap;
-    align-items: center; 
-     /* align-content: space-evenly; */
+    align-items: center;
+}
 
+.homepage-button{
+    height: 38px;
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+    margin-left: 1.5em;
+    margin-top: 1em;
+    font-size: 20px;
+    background: none;
+    border: 1px solid orange;
+    border-radius: 5px;
 }
 
 .box1,.box2{
-        height: 250px;
+        height: auto;
         width: 800px;
-         margin-bottom: 50px; 
-         /* background-color: red;  */
-        /* border: 1px solid black; */
+        margin-left: 1.3em;
+         margin-bottom: 50px;
 }
 .box1 h1{
     font-size: 2.5em;
@@ -45,15 +74,10 @@ body{
     font-size: 18px;
     margin-left: 5px;
     border-radius: 10px;
-    /* background-color: orange; */
     cursor: pointer;
-    margin-top: 5px;
-    
+    margin-top: 5px;  
 }
 
-span{
-    color: purple;
-}
 
 .box2 input{
     height: 40px;
@@ -67,6 +91,14 @@ span{
 .check-box input{
     width: 15px;
     margin-top: -10px;
+}
+
+.check-box label{
+        font-size: 20px;
+}
+
+.submit p{
+    font-size: 20px;
 }
 
  .donate{
@@ -88,12 +120,13 @@ span{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        /* flex-direction: column; */
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
         height: 100px;
-        margin-top: 20px;
-        background-color: rgb(222, 224, 225);
+        color: white;
+        font-size: 20px;
+        margin-top: 12em;
+        background-color: purple;
 }
 
 .donation2 a{
@@ -101,17 +134,52 @@ span{
 }
 
 .donation2 img:hover{
-    background-color: red;
+    background-color: orange;
     border-radius: 50%;
+    transform: scale(1.2);
 }
 
  /*  End footer css style */
-
-  /*  start responsive */
-
-  @media screen and (max-width:900px) and (min-width:1700px){
+ @media screen and (min-width:900px){
        
-        #pradesh-div{
+    #pradesh-div, #name-div{
+        height: auto;
+
+    }
+
+    .homepage-button{
+        width: auto;
+        padding: 0.5em;
+        margin-left: -0.2em;
+        height: auto;
+        }
+
+    #name-div{
+        height: auto;
+        /* margin-top: 2em; */
+    }
+
+    .donation1{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        height: auto;
+    }
+
+    .donation2{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        height: auto;
+    }
+}
+
+ 
+
+  /* responsive for laptop */
+  @media screen and (max-width:900px){
+       
+        #pradesh-div, #name-div{
             height: auto;
 
         }
@@ -154,6 +222,18 @@ span{
            height: auto;
        }
 
+       .box1 button{
+            width: 30%;
+       }
+
+       #check-box{
+            width: 15px;
+       }
+
+       .box2 input{
+            width: 90%;
+       }
+
        #name-div{
             height: auto;
         }
@@ -179,38 +259,45 @@ span{
            height: auto;
 
        }
+
+       .homepage-button{
+        width: auto;
+        padding: 0.5em;
+        margin-left: -0.2em;
+        height: auto;
+        }
+
        .box1, .box2{
-           width: 80%;
+           width: 93%;
            text-align: center;
            padding: 20px;
            height: auto;
        }
 
-       .box2 input{
-            width: 100%;
-       }
+       .box1 button{
+        width: 45%;
+        height: auto;
+        padding: 10px;
+   }
+
+   .box2 input{
+        width: 95%;
+   }
 
        .donation1{
-            width: 60%;
+            width: 100%;
             text-align: center;
             padding: 20px;
             height: auto;
         }
 
         .donation2{
-            width: 60%;
-            display: flex;
-            flex-wrap: wrap;
-            /* margin-right: 5em; */
+            width: 99%;
+            /* display: flex; */
+            flex-wrap: nowrap;
             text-align: center;
             padding: 20px;
             height: auto;
         }
-
-        /* .donate{
-                height: auto;
-                width: 100%;
-                margin-right: 20em;
-        } */
  }
 
