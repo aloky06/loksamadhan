@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,13 @@
     <link rel="stylesheet" href="style.css">
     <style>
         /* start main css style */
-        *{
+        * {
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
         }
-        #history{
+
+        #history {
             background-color: cadetblue;
             height: 60px;
             display: flex;
@@ -23,7 +25,7 @@
             justify-content: center;
         }
 
-        .our-history{
+        .our-history {
             color: purple;
             background-color: orange;
             text-align: center;
@@ -31,22 +33,22 @@
             width: 30%;
         }
 
-        #para-container{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
+        #para-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
         }
 
-        .title-div{
-                width: 50%;
-                
+        .title-div {
+            width: 50%;
+
         }
-        
 
 
-        #map{
+
+        #map {
             display: flex;
             background-color: aliceblue;
             border-radius: 20px;
@@ -55,250 +57,266 @@
             flex-wrap: wrap;
         }
 
-        .adress-div{
-                height: 330px;
-                width: 400px;
+        .adress-div {
+            height: 330px;
+            width: 400px;
         }
 
-        .adress-div p{
-                font-size: 25px;
-                font-weight: bold;
-                padding: 1em;
-        }
-        .adress-div button{
-                background-color: aqua;
-                width: 40%;
-                margin-left: 1.5em;
-                border: none;
-                font-weight: bold;
-                border-radius: 10px;
+        .adress-div p {
+            font-size: 25px;
+            font-weight: bold;
+            padding: 1em;
         }
 
-        .adress-div button:hover{
-                background-color: aquamarine;
-                box-shadow: 0px 0px 5px;
+        .adress-div button {
+            background-color: aqua;
+            width: 40%;
+            margin-left: 1.5em;
+            border: none;
+            font-weight: bold;
+            border-radius: 10px;
         }
 
-        .map-div iframe{
-                border-radius: 10px;
+        .adress-div button:hover {
+            background-color: aquamarine;
+            box-shadow: 0px 0px 5px;
         }
-        
+
+        .map-div iframe {
+            border-radius: 10px;
+        }
+
 
         /* responsive for large device */
-        @media screen and (max-width: 900px) and (min-width:1700px){
-            #service-div2, #service-div3{
-                    height: auto;
-                    padding: 10px;
+        @media screen and (max-width: 900px) and (min-width:1700px) {
+
+            #service-div2,
+            #service-div3 {
+                height: auto;
+                padding: 10px;
             }
 
-            .app-download{
-                    width: 50%;
+            .app-download {
+                width: 50%;
             }
 
-            .phone-img{
-                    width: 30%;
-                    
+            .phone-img {
+                width: 30%;
+
             }
 
-            .container-div{
-                    width: 25%;
+            .container-div {
+                width: 25%;
             }
 
-            #map{
+            #map {
                 height: auto;
             }
 
-            .adress-div{
-                    width: 30%;
+            .adress-div {
+                width: 30%;
             }
 
-            .map-div{
-                    width: 30%;
+            .map-div {
+                width: 30%;
             }
-            .map-div iframe{
-                    width: 160%;
+
+            .map-div iframe {
+                width: 160%;
             }
         }
 
         /* responsive for laptop */
 
-        @media screen and (max-width:900px){
-            #service-div2, #history, #para-container{
-                    height: auto;
-                    padding: 10px;
+        @media screen and (max-width:900px) {
+
+            #service-div2,
+            #history,
+            #para-container {
+                height: auto;
+                padding: 10px;
             }
 
-            .title-div, .video-div{
-                    width: 90%;
+            .title-div,
+            .video-div {
+                width: 90%;
             }
 
-            .video-div iframe{
-               width: 100%;
+            .video-div iframe {
+                width: 100%;
             }
 
-            .iframe iframe{
-                    width: 250%;
+            .iframe iframe {
+                width: 250%;
             }
 
-            .app-download{
-                    width: 50%;
+            .app-download {
+                width: 50%;
             }
 
-            .phone-img{
-                    width: 30%;
-                    
+            .phone-img {
+                width: 30%;
+
             }
 
-            .container-div{
-                    width: 30%;
+            .container-div {
+                width: 30%;
             }
 
-            .adress-div{
-                    width: 30%;
+            .adress-div {
+                width: 30%;
             }
 
-            .map-div{
-                    width: 30%;
+            .map-div {
+                width: 30%;
             }
 
-            .map-div iframe{
-                    width: 150%;
+            .map-div iframe {
+                width: 150%;
             }
 
         }
 
         /* responsive for tablet */
 
-        @media screen and (max-width:768px){
+        @media screen and (max-width:768px) {
 
-            #map,#history, #para-container{
-                    height: auto;
-                    
+            #map,
+            #history,
+            #para-container {
+                height: auto;
+
             }
 
-            .our-history{
-                    width: auto;
-                    padding: 10px;
+            .our-history {
+                width: auto;
+                padding: 10px;
             }
 
-            .our-history h1{
-                    font-size: 2em;
-                    
+            .our-history h1 {
+                font-size: 2em;
+
             }
 
-            .title-div{
-                    width: 90%;
-                    text-align: center;
+            .title-div {
+                width: 90%;
+                text-align: center;
             }
-            
-            .video-div iframe{
+
+            .video-div iframe {
                 width: 100%;
                 height: 300px;
             }
 
-            .iframe{
+            .iframe {
                 margin-right: 2em;
             }
 
-            .adress-div{
-                    width: 80%;
-                    text-align: center;
+            .adress-div {
+                width: 80%;
+                text-align: center;
             }
 
-            .adress-div p{
+            .adress-div p {
                 line-height: 35px;
             }
 
-            .adress-div button{
-                    margin-right: 5em;
+            .adress-div button {
+                margin-right: 5em;
             }
 
-            .map-div{
-                    width: 40%;
+            .map-div {
+                width: 40%;
             }
 
-            .map-div{
-                    width: 85%;
+            .map-div {
+                width: 85%;
             }
 
-            .map-div iframe{
-                    width: 100%;
+            .map-div iframe {
+                width: 100%;
             }
         }
 
         /* responsive for mobile phone */
 
-        @media screen and (max-width:472px){
-            .banner-div h1{
-                    font-size: 20px;
+        @media screen and (max-width:472px) {
+            .banner-div h1 {
+                font-size: 20px;
             }
 
-             #map, #para-container{
-                    height: auto;
-                    
+            #map,
+            #para-container {
+                height: auto;
+
             }
 
-            .our-history{
-                    width: auto;
-                    padding: 10px;
+            #history {
+                margin-top: -2em;
             }
 
-            .our-history h1{
-                    font-size: 1.5em;
-                    
+            .our-history {
+                width: auto;
+                padding: 10px;
             }
 
-            .title-div{
-                    width: 90%;
-                    text-align: center;
+            .our-history h1 {
+                font-size: 1.5em;
+
             }
-            
-            .video-div iframe{
+
+            .title-div {
+                width: 90%;
+                text-align: center;
+            }
+
+            .video-div iframe {
                 width: 100%;
                 height: 300px;
             }
 
-            .iframe{
+            .iframe {
                 margin-right: 2em;
             }
 
-            .adress-div{
-                    width: 80%;
-                    text-align: center;
+            .adress-div {
+                width: 80%;
+                text-align: center;
             }
 
-            .adress-div{
-                    width: 80%;
+            .adress-div {
+                width: 80%;
             }
 
-            .map-div{
-                    width: 80%;
+            .map-div {
+                width: 80%;
             }
 
 
-            .adress-div p{
-                    text-align: center;
-                    line-height: 30px;
-                    font-size: 1.3em;
+            .adress-div p {
+                text-align: center;
+                line-height: 30px;
+                font-size: 1.3em;
             }
 
-            .adress-div button{
-            margin-left: 5em;
-            width: 50%;
+            .adress-div button {
+                margin-left: 5em;
+                width: 50%;
             }
 
-            .map-div iframe{
-                    width: 100%;
+            .map-div iframe {
+                width: 100%;
             }
         }
     </style>
 </head>
+
 <body>
     <header>
         <nav id="navbar">
             <div class="nav-div">
                 <div class="logo">
-                    <a href="index.html"><img src="logo/LOK SAMADHAN PARTY LOGO.png" alt="logo"></a>
+                    <a href="index.html"><img src="logo/Lok_Samadhan_Logo.png" alt="logo"></a>
                 </div>
                 <h3>LOK <span>SAMADHAN</span> </h3>
                 <ul class="navbar">
@@ -311,12 +329,13 @@
                         <a href="Leadership.html">Leadership</a>
                         <a href="Contact.html">Contact</a>
                         <a class="donate" href="Donate.html" target="_blank"><button>Donate Now</button></a>
-                        <a class="account" href="Account.html" target="_blank"> <img src="icon/account.png" alt="account icon" width="50px"></a>
+                        <a class="account" href="Account.html" target="_blank"> <img src="icon/account.png"
+                                alt="account icon" width="50px"></a>
                     </li>
-                    
+
                 </ul>
                 <span class="menu-toggle">&#9776;</span>
-                
+
             </div>
         </nav>
     </header>
@@ -328,56 +347,89 @@
                 <h1>Constitution</h1>
             </div>
         </div><br>
-        
+
         <div id="para-container">
             <div class="title-div">
-                <p>In march 2025, a civil society movement was born in the backdrop of big-ticket corruption scandals that came to light during the Congress-led UPA regime. A group of activists from varied backgrounds had come together to demand the enactment of the Jan Lokpal Bill – a legislation that had been stuck in Parliamentary committees for decades. With public anger against corruption building up with every expose that came from the news media, the demand for a strong law that could deal with a corrupt political establishment found widespread support among ordinary Indians. Under the banner of India Against Corruption, Indians rose in protest against the government of the day, demanding the Jan Lokpal be passed immediately.</p>
-                <p>Spanning over two years, across hundreds of cities, towns, and villages, lakhs of people mobilised themselves for this cause. Protest marches, gheraos of politicians, social media campaigns – a revolution had begun. Led by social activist Anna Hazare, thousands of people in several locations sat on fasts on three separate occasions to build support for the Jan Lokpal Bill, and pressure the government into acting on people’s demand. At the end of the third and final fast, despite all the efforts of the IAC, the Parliament had still not come around to passing the Jan Lokpal.</p>
+                <p>In march 2025, a civil society movement was born in the backdrop of big-ticket corruption scandals
+                    that came to light during the Congress-led UPA regime. A group of activists from varied backgrounds
+                    had come together to demand the enactment of the Jan Lokpal Bill – a legislation that had been stuck
+                    in Parliamentary committees for decades. With public anger against corruption building up with every
+                    expose that came from the news media, the demand for a strong law that could deal with a corrupt
+                    political establishment found widespread support among ordinary Indians. Under the banner of India
+                    Against Corruption, Indians rose in protest against the government of the day, demanding the Jan
+                    Lokpal be passed immediately.</p>
+                <p>Spanning over two years, across hundreds of cities, towns, and villages, lakhs of people mobilised
+                    themselves for this cause. Protest marches, gheraos of politicians, social media campaigns – a
+                    revolution had begun. Led by social activist Anna Hazare, thousands of people in several locations
+                    sat on fasts on three separate occasions to build support for the Jan Lokpal Bill, and pressure the
+                    government into acting on people’s demand. At the end of the third and final fast, despite all the
+                    efforts of the IAC, the Parliament had still not come around to passing the Jan Lokpal.</p>
             </div>
 
             <div class="video-div">
-                <iframe width="560" height="315" style="border-radius: 10px;" src="https://www.youtube.com/embed/ztP_Ah6k3pE?si=twH4MlXj03h-Z5cS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+                <iframe width="560" height="315" style="border-radius: 10px;"
+                    src="https://www.youtube.com/embed/ztP_Ah6k3pE?si=twH4MlXj03h-Z5cS" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div><br>
 
         <div id="para-container">
 
             <div class="title-div">
-                <p>The failure of the government to agree to the people’s demands was the result of the deeply entrenched corruption that had decayed India’s political establishment. A Jan Lokpal was directly detrimental to the interests of the political parties and their leaders. That’s when one section of IAC activists, led by Arvind Kejriwal, decided that the only way to rid this country of corruption was to join politics, enter government, and clean up the system from within. Thus on the 2nd October 2012, the journey of the anti-corruption protest towards the political revolution called the Aam Aadmi Party began.</p>
+                <p>The failure of the government to agree to the people’s demands was the result of the deeply
+                    entrenched corruption that had decayed India’s political establishment. A Jan Lokpal was directly
+                    detrimental to the interests of the political parties and their leaders. That’s when one section of
+                    IAC activists, led by Arvind Kejriwal, decided that the only way to rid this country of corruption
+                    was to join politics, enter government, and clean up the system from within. Thus on the 2nd October
+                    2012, the journey of the anti-corruption protest towards the political revolution called the Aam
+                    Aadmi Party began.</p>
             </div>
 
             <div class="video-div">
-                <iframe width="560" height="315" style="border-radius: 10px;" src="https://www.youtube.com/embed/ztP_Ah6k3pE?si=twH4MlXj03h-Z5cS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" style="border-radius: 10px;"
+                    src="https://www.youtube.com/embed/ztP_Ah6k3pE?si=twH4MlXj03h-Z5cS" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            </div>
+        </div>
         </div>
         <div id="map">
             <div class="adress-div">
                 <p>
                     केंद्रीय कार्यालय पता : <br><br>
-                    ग्राम सैरा गोपालपुर, <br>
+                    ग्राम रसूलपुर, <br>
                     पोस्ट - बड़ागांव , <br>
                     वाराणसी - 221204 </p>
-                <a href="https://www.google.co.in/maps/place/Ideal+Public+School,+Saira,+Baragaon,+Varanasi/@25.4153648,82.8383599,15.98z/data=!4m6!3m5!1s0x398fd526c8991be1:0x2b0d7cc4a96ad499!8m2!3d25.4143467!4d82.8337805!16s%2Fg%2F11gjj20kcg?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D"><button>गूगल मैप पर देखे &rarr; </button></a>
+                <a
+                    href="https://www.google.co.in/maps/place/Ideal+Public+School,+Saira,+Baragaon,+Varanasi/@25.4153648,82.8383599,15.98z/data=!4m6!3m5!1s0x398fd526c8991be1:0x2b0d7cc4a96ad499!8m2!3d25.4143467!4d82.8337805!16s%2Fg%2F11gjj20kcg?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D"><button>गूगल
+                        मैप पर देखे &rarr; </button></a>
             </div>
 
             <div class="map-div">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7295.499174570451!2d82.83835985689049!3d25.415364750908974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398fd526c8991be1%3A0x2b0d7cc4a96ad499!2sIdeal%20Public%20School%2C%20Saira%2C%20Baragaon%2C%20Varanasi!5e0!3m2!1sen!2sin!4v1746527884655!5m2!1sen!2sin" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7295.499174570451!2d82.83835985689049!3d25.415364750908974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398fd526c8991be1%3A0x2b0d7cc4a96ad499!2sIdeal%20Public%20School%2C%20Saira%2C%20Baragaon%2C%20Varanasi!5e0!3m2!1sen!2sin!4v1746527884655!5m2!1sen!2sin"
+                    width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-       </div>
+        </div>
     </main>
-    
+
     <footer>
         <div id="footer">
-            
-                <div class="div-container1">
-                    <h2>Candidate Info</h2>
-                    <p>K.P. Maurya </p>
-                    <a href="https://www.google.co.in/maps/place/Ideal+Public+School,+Saira,+Baragaon,+Varanasi/@25.4153648,82.8383599,15.98z/data=!4m6!3m5!1s0x398fd526c8991be1:0x2b0d7cc4a96ad499!8m2!3d25.4143467!4d82.8337805!16s%2Fg%2F11gjj20kcg?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D">Vill- Saira Gopalpur Baragaon Varanasi</a> <br>
-                   <a href="QR Code/Contact QR Code.jpeg" target="_blank">+91 902 656 5151 <br> +91 636 377 7534</a> <br>
-                    <a href="mailto:aks738059@gmail.com">loksamadha info@gmail.com</a>
-                </div>
-        
+
+            <div class="div-container1">
+                <h2>Candidate Info</h2>
+                <p>K.P. Maurya </p>
+                <a
+                    href="https://www.google.co.in/maps/place/Ideal+Public+School,+Saira,+Baragaon,+Varanasi/@25.4153648,82.8383599,15.98z/data=!4m6!3m5!1s0x398fd526c8991be1:0x2b0d7cc4a96ad499!8m2!3d25.4143467!4d82.8337805!16s%2Fg%2F11gjj20kcg?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D">Vill-
+                    Rasoolpur Baragaon Varanasi</a><br>
+                <a href="QR Code/Contact QR Code.jpeg" target="_blank">+91 902 656 5151 <br> +91 636 377 7534</a> <br>
+                <a href="mailto:aks738059@gmail.com">loksamadha info@gmail.com</a>
+            </div>
+
 
             <div class="div-container2">
                 <h2>Quick Link</h2>
@@ -402,14 +454,16 @@
                     <h2>Newsletter</h2>
                     <input type="text" placeholder="Your Name*" required><br></br>
                     <input type="text" placeholder="Your Email*" required><br></br>
-                    <input type="submit" value="Send"id="send-button">
+                    <input type="submit" value="Send" id="send-button">
                 </form>
             </div>
         </div>
 
         <div id="copyright-div">
             <div class="box1">
-                <a href="https://www.hindsol.com"><p>Design & Developed By: Hindsol Software Pvt. Ltd.</p></a> 
+                <a href="https://www.hindsol.com">
+                    <p>Design & Developed By: Hindsol Software Pvt. Ltd.</p>
+                </a>
             </div>
 
             <div class="box2">
@@ -425,27 +479,34 @@
 
         <div id="icons">
             <div class="icon">
-                <a href="https://www.facebook.com/"><img src="icon/facebook-icon-removebg-preview.png" alt="facebook icon" width="30px"></a>
-                <a href="https://www.instagram.com/"><img src="icon/instagram-icon-removebg-preview.png" alt="instagram icon" width="30px"></a>
-                <a href="https://www.linkedin.com"><img src="icon/linkedin-removebg-preview.png" alt="linkedin icon" width="30px"></a>
-                <a href="https://x.com/?lang=en"><img src="icon/twitter-icon-removebg-preview.png" alt="twitter icon" width="30px"></a>
-                <a href="https://www.youtube.com/"><img src="icon/youtube-removebg-preview.png" alt="youtube icon" width="30px"></a>
-                <a href="https://web.telegram.org/k/"><img src="icon/telegran-icon-removebg-preview.png" alt="telegram icon" width="30px"></a>
-                
+                <a href="https://www.facebook.com/"><img src="icon/facebook-icon-removebg-preview.png"
+                        alt="facebook icon" width="30px"></a>
+                <a href="https://www.instagram.com/"><img src="icon/instagram-icon-removebg-preview.png"
+                        alt="instagram icon" width="30px"></a>
+                <a href="https://www.linkedin.com"><img src="icon/linkedin-removebg-preview.png" alt="linkedin icon"
+                        width="30px"></a>
+                <a href="https://x.com/?lang=en"><img src="icon/twitter-icon-removebg-preview.png" alt="twitter icon"
+                        width="30px"></a>
+                <a href="https://www.youtube.com/"><img src="icon/youtube-removebg-preview.png" alt="youtube icon"
+                        width="30px"></a>
+                <a href="https://web.telegram.org/k/"><img src="icon/telegran-icon-removebg-preview.png"
+                        alt="telegram icon" width="30px"></a>
+
             </div>
         </div>
     </footer>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.querySelector(".menu-toggle");
-    const navbar = document.querySelector(".navbar");
+            const toggleButton = document.querySelector(".menu-toggle");
+            const navbar = document.querySelector(".navbar");
 
-    toggleButton.addEventListener("click", function () {
-        navbar.classList.toggle("active");
-    });
-});
+            toggleButton.addEventListener("click", function () {
+                navbar.classList.toggle("active");
+            });
+        });
 
     </script>
-    
+
 </body>
+
 </html>

@@ -59,11 +59,14 @@ body{
 
 
 @media screen and (max-width: 768px){
+#term{
+        height: auto;
+}
 .term{
-        max-width: 100%;
-        padding: -2em;
+        width: 95%;
         align-items: center;
-        margin-left: 1em;
+        height: auto;
+        margin-top: 1em;
 }
 
 .homepage-button{

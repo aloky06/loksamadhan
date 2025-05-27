@@ -222,6 +222,13 @@ body{
            height: auto;
        }
 
+        .homepage-button{
+        width: auto;
+        padding: 0.5em;
+        margin-left: -0.2em;
+        height: auto;
+        }
+
        .box1 button{
             width: 30%;
        }
