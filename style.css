@@ -376,6 +376,14 @@ border-bottom: 3px solid red;
 border-radius: 10px;
 }
 
+#whatsapp-icon{
+    display: inline-block;
+    position: fixed;
+    cursor: pointer;
+    right: 0.5em;
+    bottom: 20em;
+}
+
 
 .div-container4 input,textarea{
 height: 30px;
