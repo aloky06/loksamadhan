@@ -56,7 +56,7 @@ border-radius: 5px;
 }
 
 .lok{
-    color: #000080;
+    color: blue;
 }
 
 span{
@@ -555,8 +555,8 @@ height: auto;
 padding: 10px;
 }
 
-.nav-div h1{
-    font-size: 2em;
+.nav-div h3{
+    font-size: 1.6em;
     
 }
 
@@ -694,8 +694,9 @@ text-align: center;
     width: 80%;
 }
 
-.nav-div h1{
+.nav-div h3{
     font-size: 1.6em;
+    text-align: center;
     
 }
 
@@ -829,19 +830,20 @@ text-align: center;
 }
 
 .nav-div h3{
-    font-size: 30px;
+    font-size: 27px;
     /* display: flex; */
+    margin-right: 1em;
     text-align: center;
     
 }
 
 .logo img{
-    width: 80px;
-    margin-left: 2.5em;
+    width: 90px;
+    margin-left: 2em;
 }
 
 .menu-toggle{
-    margin-right: 1.3em;
+    margin-right: 1.5em;
     margin-top: -0.1em;
     color: black;
 }
