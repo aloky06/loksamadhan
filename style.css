@@ -384,7 +384,7 @@ border-radius: 10px;
     display: inline-block;
     position: fixed;
     cursor: pointer;
-    left: 0.5em;
+    left: 0.3em;
     bottom: 5em;
 }
 
@@ -392,7 +392,7 @@ border-radius: 10px;
     display: inline-block;
     position: fixed;
     cursor: pointer;
-    right: 0.5em;
+    right: 0.3em;
     bottom: 5em;
 }
 
