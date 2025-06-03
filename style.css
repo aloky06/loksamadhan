@@ -4,6 +4,10 @@
     padding: 0px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .logo img{
 /* width: 50px; */
 max-width: 105px;
@@ -380,8 +384,16 @@ border-radius: 10px;
     display: inline-block;
     position: fixed;
     cursor: pointer;
+    left: 0.5em;
+    bottom: 5em;
+}
+
+#top-arrow{
+    display: inline-block;
+    position: fixed;
+    cursor: pointer;
     right: 0.5em;
-    bottom: 3em;
+    bottom: 5em;
 }
 
 
