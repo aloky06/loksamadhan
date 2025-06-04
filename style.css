@@ -813,8 +813,8 @@ text-align: center;
     }
 
     .adress-div button{
-        margin-right: em;
-        width: 30%;
+        margin-right: 0em;
+        width: 25%;
     }
 
     .map-div{
@@ -822,7 +822,7 @@ text-align: center;
     }
 
     .map-div{
-        width: 85%;
+        width: 97%;
     }
 
     .map-div iframe{
