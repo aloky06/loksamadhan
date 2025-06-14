@@ -46,14 +46,13 @@ list-style-type: none;
 }
 
 .navbar a{
-color: red;
+color: blue;
 margin-right: 25px;
 text-decoration: none;
 font-size: 21px;
 }
 
 .navbar a:hover{   
-border-bottom: 3px solid red;
 color: black;
 border-radius: 5px;
 
@@ -69,12 +68,13 @@ color: #C76E00;
 
 .donate button{
 cursor: pointer;
-height: 40px;
+height: auto;
 font-size: 20px;
 background-color: orange;
 border: none;
+padding: 0.5em;
 border-radius: 20px;
-width: 200px;
+width: auto;
 }
 
 .donate button:hover{
@@ -389,8 +389,8 @@ color: black;
 }
 
 #footer a:hover{
-color: purple;
-border-bottom: 3px solid red;
+border-bottom: 3px solid purple;
+padding: 0.3em;
 border-radius: 10px;
 }
 
@@ -488,9 +488,14 @@ transform: scale(1.4);
     .nav-div {
     flex-direction: row;
     height: auto;
+    width: 100%;
     padding: 10px;
     }
-    
+
+    .nav-div h3{
+        font-size: 1.5em;
+        text-align: center;
+    }
     .logo img{
         width: 120px;
         margin-left: 0.3em;
@@ -878,7 +883,7 @@ text-align: center;
 
 .logo img{
     width: 90px;
-    margin-left: 2em;
+    margin-left:2em;
 }
 
 .menu-toggle{
