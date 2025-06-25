@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In || Lok Samadhan Party</title>
+    <title>Register Account || Lok Samadhan Party</title>
     <link rel="shortcut icon" href="favicon/favicon.ico" type="favicon">
     <style>
         * {
@@ -95,7 +95,7 @@
             <h2>Lok Samadhan Party Member Registration</h2>
             <p>Join the fastest-growing political party in the history of India.</p>
         </div>
-        <form action=".php">
+        <form action="https://formspree.io/f/myzjbepr" method="POST">
             <div class="registration-div2">
                 <label for="state">State/UT:</label>
                 <select name="state" id="state">
@@ -139,13 +139,13 @@
                 </select>
 
                 <label for="name">Name:</label>
-                <input type="text" id="name" required>
+                <input type="text" name="name" id="name" required>
 
                 <label for="mobile">Mobile Number:</label>
-                <input type="text" id="mobile" required>
+                <input type="text" name="mobile" id="mobile" required>
 
                 <div class="checkbox-label">
-                    <input type="checkbox" required>
+                    <input type="checkbox" name="checkbox" required>
                     <label>
                         I am an Indian citizen and above 18 years of age. I am not employed in any government position,
                         nor am I a member of any other political party registered with the Election Commission of India.
@@ -156,7 +156,7 @@
                 </div>
 
                 <div class="checkbox-label">
-                    <input type="checkbox" required>
+                    <input type="checkbox" name="checkbox" required>
                     <label>
                         I hereby consent to receiving communications from the party through various channels, including
                         written, digital, and audio-visual formats. These may include phone calls, SMS, IVR, emails, or
