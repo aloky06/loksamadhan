@@ -5,10 +5,45 @@
 }
 
 body{
+    background-color: aliceblue;
+}
+
+#donate-container{
+    display: flex;
+    margin-top: 4em;
+    justify-content: center;
+    align-items: center;
+}
+
+.donate-container{
+    border: 1px solid black;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2em;
+    text-align: center;
+    width: 50%;
+}
+
+.donate-container p{
+        font-size: 20px;
+}
+
+.donate-container button{
+        padding: 0.5em;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: purple;
+        color: orange;
+        border: none;
+        border-radius: 10px;
+}
+
+/* body{
    background-image: url(background/donate\ banner-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
 
 
 /*  start main css style */
@@ -125,7 +160,7 @@ body{
         height: 100px;
         color: white;
         font-size: 20px;
-        margin-top: 12em;
+        margin-top: 8em;
         background-color: purple;
 }
 
@@ -172,6 +207,10 @@ body{
         padding: 20px;
         height: auto;
     }
+
+    .donate-container{
+            width: 50%;
+        }
 }
 
  
@@ -206,6 +245,10 @@ body{
             text-align: center;
             padding: 20px;
             height: auto;
+        }
+
+        .donate-container{
+            width: 95%;
         }
   }
 
@@ -258,6 +301,10 @@ body{
             padding: 20px;
             height: auto;
         }
+
+        .donate-container{
+            width: 95%;
+        }
  }
 
  @media screen and (max-width:480px){
@@ -305,6 +352,10 @@ body{
             text-align: center;
             padding: 20px;
             height: auto;
+        }
+
+        .donate-container{
+            width: 95%;
         }
  }
 
