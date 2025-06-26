@@ -38,43 +38,53 @@
             cursor: pointer;
         }
 
-        #yatra-button{
-              padding: 0.5em;
-              background-color: purple;
-              color: orange;
-              border: none;
-              border-radius: 10px;
+        #yatra-button {
+            padding: 0.5em;
+            background-color: purple;
+            color: orange;
+            border: none;
+            border-radius: 10px;
             font-size: 20px;
             cursor: pointer;
         }
 
-    .popup {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.5);
-      z-index: 1;
-    }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
 
-    .popup-content {
-      background: #fff;
-      padding: 30px;
-      margin: 15% auto;
-      width: auto;
-      text-align: center;
-      height: auto;
-      border-radius: 10px;
-      position: relative;
-    }
+        #popup-image{
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            border: 1px solid white;
+        }
 
-    .close {
-      position: absolute;
-      top: 10px; right: 15px;
-      font-size: 20px;
-      cursor: pointer;
-      color: red;
-    }
+        .popup-content {
+            background: #fff;
+            /* padding: 30px;
+      margin: 15% auto; */
+            width: 100%;
+            text-align: center;
+            /* height: auto; */
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            color: red;
+        }
 
         .contact-div1 img {
             height: 400px;
@@ -222,18 +232,18 @@
         @media screen and (max-width:900px) {
 
             #leader-container,
-            #map{
+            #map {
                 height: auto;
                 padding: 10px;
             }
 
-            .popup-content{
-                margin-top:8em;
+            .popup-content {
+                margin-top: 8em;
                 width: 100%;
                 height: auto;
             }
 
-              .popup-content img{
+            .popup-content img {
                 width: 100%;
                 height: auto;
             }
@@ -251,7 +261,7 @@
                 width: 80%;
             }
 
-             #gallery-container,
+            #gallery-container,
             #map {
                 height: auto;
             }
@@ -288,18 +298,19 @@
         @media screen and (max-width:768px) {
 
             .leader-container,
-            #map,#gallery-container {
+            #map,
+            #gallery-container {
                 height: auto;
 
             }
 
-            .popup-content{
-                margin-top:8em;
+            .popup-content {
+                margin-top: 8em;
                 width: 100%;
                 height: auto;
             }
 
-              .popup-content img{
+            .popup-content img {
                 width: 100%;
                 height: auto;
             }
@@ -313,7 +324,7 @@
                 width: 100%;
             }
 
-              .gallery-div {
+            .gallery-div {
                 width: 48%;
             }
 
@@ -356,12 +367,13 @@
             }
 
             #map,
-            #phone-container,#gallery-container {
+            #phone-container,
+            #gallery-container {
                 height: auto;
 
             }
 
-              .gallery-div {
+            .gallery-div {
                 width: 95%;
                 margin-top: 3em;
             }
@@ -370,13 +382,13 @@
                 width: 100%;
             }
 
-            .popup-content{
-                margin-top:8em;
+            .popup-content {
+                margin-top: 7.5em;
                 width: 100%;
                 height: auto;
             }
 
-              .popup-content img{
+            .popup-content img {
                 width: 100%;
                 height: auto;
             }
@@ -443,144 +455,149 @@
             <div class="contact-div1">
                 <img src="background/purple and orange banner.jpg" alt="background">
                 <h2>Yatra: Lok <span class="span">Samadhan Party </span></h2>
-               
-                 
-        </div><br>
-          <div id="yatra-container">
-                    <button id="yatra-button" onclick="openPopup()">Lok Samadhan Yatra</button>
+
+
+            </div><br>
+            <div id="yatra-container">
+                <button id="yatra-button" onclick="openPopup()">Lok Samadhan Yatra</button>
+            </div>
+
+
+            <div id="popup-image">
+                <div class="popup" id="popupBox">
+                    <div class="popup-content">
+                        <span class="close" onclick="closePopup()">&times;</span>
+                        <img src="img/lok samadhan yatra image.png" alt="image" width="450px">
+                    </div>
                 </div>
-      
-
- 
-  <div class="popup" id="popupBox">
-    <div class="popup-content">
-      <span class="close" onclick="closePopup()">&times;</span>
-        <img src="img/appstore-removebg-preview.png" alt="">
-    
-     
-    </div>
-  </div><br>
-      
-
-        <div id="leader-container">
-            <div class="image-1">
-                <img src="gallery/10.png" alt="image" width="700px">
-            </div>
-            <div class="content-1">
-                <h1>K.P Maurya</h1>
-                <h2>Founder 2024 - 2025</h2>
-                <p>साथियों! जय हिंद-जय भारत
-                    मैं,<br> कन्हैया प्रसाद मौर्य प्रातः स्मरणीय पूज्य माता-पिता के चरणों में बंदन कर लोक समाधान पार्टी
-                    की स्थापना कर यह संकल्प ले रखा हूँ कि अपने जीवन के 60 वर्ष का कालखंड घर-परिवार के लालन-पालन बच्चों
-                    के विकास की प्रति रहेगा। शेष 60 वर्ष के बाद का संपूर्ण जीवन लोकहितार्थ समाजसेवा में समर्पित
-                    रहेगा।<br>
-
-                    &nbsp;&nbsp;&nbsp; मैं ऐसे जनहित कार्य करूंगा जिन्हें आज तक कोई राजनीतिक दल नहीं कर रहा है, और उन
-                    समस्याओं का समाधान खोजूंगा जिससे आमजन सबसे अधिक पीड़ित हैं। इसके लिए मैंने 'लोक समाधान' नामक एक
-                    संगठन की स्थापना की है, जो जनसहयोग और समर्थन से जटिल समस्याओं के समाधान की दिशा में कार्य
-                    करेगा।<br><br>
-
-                    &nbsp;&nbsp;&nbsp;साथ ही, मैंने यह निश्चय किया है कि मैं जीवन में कभी चुनाव नहीं लड़ूंगा। इस संस्था
-                    में सेवा करते हुए मैं एक योग्य चंद्रगुप्त मौर्य की तलाश करता रहूंगा। जिस दिन मुझे ऐसा योग्य व्यक्ति
-                    मिल जाएगा, उस दिन मैं स्वयं इस संस्था से संन्यास ले लूंगा.</p><br>
-                <p>🔹 60 वर्ष तक घर-परिवार, 60 के बाद विश्व परिवार।<br>
-                    🔹 न चुनाव लड़ूंगा, न सत्ता चाहूंगा — सिर्फ जनसेवा करूंगा।<br>
-                    🔹 जहां राजनीति चुप है, वहीं से ‘लोक समाधान’ की शुरुआत है।<br>
-                    🔹 हर पीड़ा का समाधान, जनसहयोग से लोक समाधान।<br>
-                    🔹 मैं खोज रहा हूँ एक चंद्रगुप्त — मिलते ही कर लूंगा संन्यास<br>
-                </p>
-            </div>
-        </div><br>
-
-        <div id="gallery-container">
-            <div class="gallery-div">
-                <img src="gallery/image_9.jpg" alt="image">
-                <!-- <p>Foundation for P. A. Sangma Integrated Sports Complex Tura</p> -->
-
-            </div>
-
-            <div class="gallery-div">
-                <img src="gallery/image_8.jpg" alt="image">
-                <!-- <p>Unveiling The Statue of P.A. Sangma</p> -->
-            </div>
-
-            <div class="gallery-div">
-                <img src="gallery/image_7.jpg" alt="image">
-                <!-- <p>The NPP Journey</p> -->
-            </div>
-
-            <div class="gallery-div">
-                <img src="gallery/image_6.jpg" alt="image">
-                <!-- <p>Spirit of NPP</p> -->
-            </div>
+            </div><br>
 
 
-            <div class="gallery-div">
-                <img src="gallery/image_5.jpg" alt="image">
-                <!-- <p>National Executive Committee Meeting</p> -->
-            </div>
+
+            <div id="leader-container">
+                <div class="image-1">
+                    <img src="gallery/10.png" alt="image" width="700px">
+                </div>
+                <div class="content-1">
+                    <h1>K.P Maurya</h1>
+                    <h2>Founder 2024 - 2025</h2>
+                    <p>साथियों! जय हिंद-जय भारत
+                        मैं,<br> कन्हैया प्रसाद मौर्य प्रातः स्मरणीय पूज्य माता-पिता के चरणों में बंदन कर लोक समाधान
+                        पार्टी
+                        की स्थापना कर यह संकल्प ले रखा हूँ कि अपने जीवन के 60 वर्ष का कालखंड घर-परिवार के लालन-पालन
+                        बच्चों
+                        के विकास की प्रति रहेगा। शेष 60 वर्ष के बाद का संपूर्ण जीवन लोकहितार्थ समाजसेवा में समर्पित
+                        रहेगा।<br>
+
+                        &nbsp;&nbsp;&nbsp; मैं ऐसे जनहित कार्य करूंगा जिन्हें आज तक कोई राजनीतिक दल नहीं कर रहा है, और
+                        उन
+                        समस्याओं का समाधान खोजूंगा जिससे आमजन सबसे अधिक पीड़ित हैं। इसके लिए मैंने 'लोक समाधान' नामक एक
+                        संगठन की स्थापना की है, जो जनसहयोग और समर्थन से जटिल समस्याओं के समाधान की दिशा में कार्य
+                        करेगा।<br><br>
+
+                        &nbsp;&nbsp;&nbsp;साथ ही, मैंने यह निश्चय किया है कि मैं जीवन में कभी चुनाव नहीं लड़ूंगा। इस
+                        संस्था
+                        में सेवा करते हुए मैं एक योग्य चंद्रगुप्त मौर्य की तलाश करता रहूंगा। जिस दिन मुझे ऐसा योग्य
+                        व्यक्ति
+                        मिल जाएगा, उस दिन मैं स्वयं इस संस्था से संन्यास ले लूंगा.</p><br>
+                    <p>🔹 60 वर्ष तक घर-परिवार, 60 के बाद विश्व परिवार।<br>
+                        🔹 न चुनाव लड़ूंगा, न सत्ता चाहूंगा — सिर्फ जनसेवा करूंगा।<br>
+                        🔹 जहां राजनीति चुप है, वहीं से ‘लोक समाधान’ की शुरुआत है।<br>
+                        🔹 हर पीड़ा का समाधान, जनसहयोग से लोक समाधान।<br>
+                        🔹 मैं खोज रहा हूँ एक चंद्रगुप्त — मिलते ही कर लूंगा संन्यास<br>
+                    </p>
+                </div>
+            </div><br>
+
+            <div id="gallery-container">
+                <div class="gallery-div">
+                    <img src="gallery/image_9.jpg" alt="image">
+                    <!-- <p>Foundation for P. A. Sangma Integrated Sports Complex Tura</p> -->
+
+                </div>
+
+                <div class="gallery-div">
+                    <img src="gallery/image_8.jpg" alt="image">
+                    <!-- <p>Unveiling The Statue of P.A. Sangma</p> -->
+                </div>
+
+                <div class="gallery-div">
+                    <img src="gallery/image_7.jpg" alt="image">
+                    <!-- <p>The NPP Journey</p> -->
+                </div>
+
+                <div class="gallery-div">
+                    <img src="gallery/image_6.jpg" alt="image">
+                    <!-- <p>Spirit of NPP</p> -->
+                </div>
 
 
-            <div class="gallery-div">
-                <img src="gallery/image_4.jpg" alt="image">
-                <!-- <p>Shillong Party Rally 2018</p> -->
-            </div>
-
-            <div class="gallery-div">
-                <img src="gallery/image_3.jpg" alt="image">
-                <!-- <p>Election Campaign 2018: Rangsakona</p> -->
-            </div>
-
-            <div class="gallery-div">
-                <img src="gallery/image_2.jpg" alt="image">
-                <!-- <p>2018 Campaign Trail Pictures</p> -->
-            </div>
-
-            <div class="gallery-div">
-                <img src="gallery/image_1.jpg" alt="image">
-                <!-- <p>North-East Coordination Committee 2019</p> -->
-            </div>
-            <div class="gallery-div">
-                <img src="gallery/image_11.jpg" alt="image">
-                <!-- <p>North-East Coordination Committee 2019</p> -->
-            </div>
-            <div class="gallery-div">
-                <img src="gallery/image_12.jpg" alt="image">
-                <!-- <p>North-East Coordination Committee 2019</p> -->
-            </div>
-            <div class="gallery-div">
-                <img src="gallery/image_13.jpg" alt="image">
-                <!-- <p>North-East Coordination Committee 2019</p> -->
-            </div>
-        </div><br><br>
+                <div class="gallery-div">
+                    <img src="gallery/image_5.jpg" alt="image">
+                    <!-- <p>National Executive Committee Meeting</p> -->
+                </div>
 
 
-        <div id="map">
-            <div class="adress-div">
-                <p>
-                    केंद्रीय कार्यालय पता : <br><br>
-                    ग्राम - सैरा, <br>
-                    पोस्ट - रसूलपुर , <br>
-                    थाना - बड़ागांव, <br>
-                    वाराणसी - 221204 </p>
-                <a
-                    href="https://www.google.co.in/maps/place/Ideal+Public+School,+Saira,+Baragaon,+Varanasi/@25.4153648,82.8383599,15.98z/data=!4m6!3m5!1s0x398fd526c8991be1:0x2b0d7cc4a96ad499!8m2!3d25.4143467!4d82.8337805!16s%2Fg%2F11gjj20kcg?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D"><button>गूगल
-                        मैप पर देखे &rarr; </button></a>
+                <div class="gallery-div">
+                    <img src="gallery/image_4.jpg" alt="image">
+                    <!-- <p>Shillong Party Rally 2018</p> -->
+                </div>
+
+                <div class="gallery-div">
+                    <img src="gallery/image_3.jpg" alt="image">
+                    <!-- <p>Election Campaign 2018: Rangsakona</p> -->
+                </div>
+
+                <div class="gallery-div">
+                    <img src="gallery/image_2.jpg" alt="image">
+                    <!-- <p>2018 Campaign Trail Pictures</p> -->
+                </div>
+
+                <div class="gallery-div">
+                    <img src="gallery/image_1.jpg" alt="image">
+                    <!-- <p>North-East Coordination Committee 2019</p> -->
+                </div>
+                <div class="gallery-div">
+                    <img src="gallery/image_11.jpg" alt="image">
+                    <!-- <p>North-East Coordination Committee 2019</p> -->
+                </div>
+                <div class="gallery-div">
+                    <img src="gallery/image_12.jpg" alt="image">
+                    <!-- <p>North-East Coordination Committee 2019</p> -->
+                </div>
+                <div class="gallery-div">
+                    <img src="gallery/image_13.jpg" alt="image">
+                    <!-- <p>North-East Coordination Committee 2019</p> -->
+                </div>
+            </div><br><br>
+
+
+            <div id="map">
+                <div class="adress-div">
+                    <p>
+                        केंद्रीय कार्यालय पता : <br><br>
+                        ग्राम - सैरा, <br>
+                        पोस्ट - रसूलपुर , <br>
+                        थाना - बड़ागांव, <br>
+                        वाराणसी - 221204 </p>
+                    <a
+                        href="https://www.google.co.in/maps/place/Ideal+Public+School,+Saira,+Baragaon,+Varanasi/@25.4153648,82.8383599,15.98z/data=!4m6!3m5!1s0x398fd526c8991be1:0x2b0d7cc4a96ad499!8m2!3d25.4143467!4d82.8337805!16s%2Fg%2F11gjj20kcg?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D"><button>गूगल
+                            मैप पर देखे &rarr; </button></a>
+                </div>
+                <div id="whatsapp-icon">
+                    <a href="https://wa.me/919026565151" target="_blank"><img src="icon/whatsapps-removebg-preview.png"
+                            alt="icon" width="40px"></a>
+                </div>
+                <div id="top-arrow">
+                    <a href="#navbar"><img src="icon/top-arrow-unscreen.gif" alt="icon" width="40px"></a>
+                </div>
+                <div class="map-div">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7295.499174570451!2d82.83835985689049!3d25.415364750908974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398fd526c8991be1%3A0x2b0d7cc4a96ad499!2sIdeal%20Public%20School%2C%20Saira%2C%20Baragaon%2C%20Varanasi!5e0!3m2!1sen!2sin!4v1746527884655!5m2!1sen!2sin"
+                        width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-            <div id="whatsapp-icon">
-                <a href="https://wa.me/919026565151" target="_blank"><img src="icon/whatsapps-removebg-preview.png"
-                        alt="icon" width="40px"></a>
-            </div>
-            <div id="top-arrow">
-                <a href="#navbar"><img src="icon/top-arrow-unscreen.gif" alt="icon" width="40px"></a>
-            </div>
-            <div class="map-div">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7295.499174570451!2d82.83835985689049!3d25.415364750908974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398fd526c8991be1%3A0x2b0d7cc4a96ad499!2sIdeal%20Public%20School%2C%20Saira%2C%20Baragaon%2C%20Varanasi!5e0!3m2!1sen!2sin!4v1746527884655!5m2!1sen!2sin"
-                    width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
 
     </main>
 
@@ -670,15 +687,15 @@
             });
         });
 
-         function openPopup() {
-      document.getElementById("popupBox").style.display = "block";
-    }
+        function openPopup() {
+            document.getElementById("popupBox").style.display = "block";
+        }
 
-    function closePopup() {
-      document.getElementById("popupBox").style.display = "none";
-    }
+        function closePopup() {
+            document.getElementById("popupBox").style.display = "none";
+        }
 
-      
+
     </script>
 
 </body>
